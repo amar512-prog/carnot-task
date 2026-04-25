@@ -1,0 +1,55 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: demo
+      POSTGRES_USER: demo
+      POSTGRES_PASSWORD: demo
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  api:
+    build:
+      context: .
+    depends_on:
+      - db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      DEMO_DB_URL: postgresql://demo:demo@db:5432/demo
+      DEMO_API_URL: http://api:8000
+      DEMO_CONFIG_PATH: config/demo.yaml
+      HF_TOKEN: ${HF_TOKEN:-}
+      HUGGING_FACE_HUB_TOKEN: ${HF_TOKEN:-}
+      PYTHONPATH: /app/src
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./.cache:/app/.cache
+      - ./reports:/app/reports
+    command: uvicorn demo.api.main:app --host 0.0.0.0 --port 8000
+
+  maintenance:
+    build:
+      context: .
+    depends_on:
+      - db
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      DEMO_DB_URL: postgresql://demo:demo@db:5432/demo
+      DEMO_API_URL: http://api:8000
+      DEMO_CONFIG_PATH: config/demo.yaml
+      HF_TOKEN: ${HF_TOKEN:-}
+      HUGGING_FACE_HUB_TOKEN: ${HF_TOKEN:-}
+      PYTHONPATH: /app/src
+    volumes:
+      - ./.cache:/app/.cache
+      - ./reports:/app/reports
+    command: python -m demo.workers.maintenance
+
+volumes:
+  pgdata:

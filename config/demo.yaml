@@ -1,0 +1,25 @@
+# Shared demo thresholds and runtime settings.
+join_threshold: 0.72
+draft_score_min: 0.50
+draft_score_max: 0.72
+merge_evidence_threshold: 0.80
+semantic_floor: 0.55
+time_decay_half_life_minutes: 60
+max_reuse_age_minutes: 180
+candidate_limit: 30
+gate1_vector_mode: stable_projection
+reranker_model_id: cross-encoder/ms-marco-MiniLM-L6-v2
+reranker_top_k: 2
+judge_model_id: qwen3:4b-thinking
+judge_api_url: http://host.docker.internal:11434
+judge_timeout_seconds: 180
+draft_merge_window_minutes: 15
+maintenance_interval_minutes: 5
+embedding_dimension: 1024
+embedding_backend: sentence-transformers
+vector_mode: auto
+embedding_model_id: codefuse-ai/F2LLM-v2-0.6B
+model_cache_dir: .cache/models
+baseline_story_path: data/baseline_story.jsonl
+baseline_labels_path: data/baseline_story.labels.json
+reports_dir: reports

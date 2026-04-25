@@ -1,0 +1,13 @@
+{"event_id":"evt-1001","source":"support","occurred_at":"2026-04-25T09:00:00Z","text":"Login errors are spiking in the auth service","metadata":{"expected_cluster":"auth-login"}}
+{"event_id":"evt-1002","source":"query","occurred_at":"2026-04-25T09:03:00Z","text":"Authentication failures are rising fast for sign in","metadata":{"expected_cluster":"auth-login"}}
+{"event_id":"evt-1003","source":"log","occurred_at":"2026-04-25T09:05:00Z","text":"Login errors are spiking in the auth service","metadata":{"expected_cluster":"auth-login"}}
+{"event_id":"evt-1004","source":"ticket","occurred_at":"2026-04-25T09:10:00Z","text":"Checkout service is timing out for card payments","metadata":{"expected_cluster":"checkout-payments"}}
+{"event_id":"evt-1005","source":"query","occurred_at":"2026-04-25T09:12:00Z","text":"Card payment flow keeps timing out in checkout","metadata":{"expected_cluster":"checkout-payments"}}
+{"event_id":"evt-1006","source":"ticket","occurred_at":"2026-04-25T09:20:00Z","text":"Weekly sales dashboard needs a brighter chart palette","metadata":{"expected_cluster":"dashboard-ui"}}
+{"event_id":"evt-1007","source":"support","occurred_at":"2026-04-25T10:01:00Z","text":"Users still cannot sign in because auth failures continue","metadata":{"expected_cluster":"auth-login"}}
+{"event_id":"evt-1008","source":"log","occurred_at":"2026-04-25T10:15:00Z","text":"Gateway returns 502 during checkout payment requests","metadata":{"expected_cluster":"checkout-payments"}}
+{"event_id":"evt-1009","source":"ticket","occurred_at":"2026-04-25T10:17:00Z","text":"Payment requests fail with 502 errors in checkout gateway","metadata":{"expected_cluster":"checkout-payments"}}
+{"event_id":"evt-1010","source":"support","occurred_at":"2026-04-25T10:40:00Z","text":"Password reset links are erroring out for several users","metadata":{"expected_cluster":"password-reset"}}
+{"event_id":"evt-1011","source":"query","occurred_at":"2026-04-25T10:42:00Z","text":"Users report reset links failing during password recovery","metadata":{"expected_cluster":"password-reset"}}
+{"event_id":"evt-1012","source":"ticket","occurred_at":"2026-04-25T11:05:00Z","text":"Checkout payment issue still reproduces with gateway 502 responses","metadata":{"expected_cluster":"checkout-payments"}}
+

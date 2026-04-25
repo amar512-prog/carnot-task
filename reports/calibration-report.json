@@ -1,0 +1,1455 @@
+{
+  "recommended_thresholds": {
+    "join_threshold": 0.72,
+    "draft_score_min": 0.5,
+    "draft_score_max": 0.72,
+    "merge_evidence_threshold": 0.8
+  },
+  "search_space": [
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.72,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.72,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.7,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.7,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.68,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.68,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.35294117647058826,
+      "pairwise_f1": 0.5217391304347826
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.76,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.76,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.76,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.8,
+      "draft_score_min": 0.76,
+      "draft_score_max": 0.8,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.76,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.76,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.76,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.78,
+      "draft_score_min": 0.76,
+      "draft_score_max": 0.78,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.76,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.76,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.5,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.56,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.6,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.64,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.68,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.8,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.85,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.9,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    },
+    {
+      "join_threshold": 0.74,
+      "draft_score_min": 0.72,
+      "draft_score_max": 0.74,
+      "merge_evidence_threshold": 0.95,
+      "pairwise_precision": 1.0,
+      "pairwise_recall": 0.23529411764705882,
+      "pairwise_f1": 0.38095238095238093
+    }
+  ],
+  "metrics": {
+    "pairwise_precision": 1.0,
+    "pairwise_recall": 0.35294117647058826,
+    "pairwise_f1": 0.5217391304347826
+  }
+}

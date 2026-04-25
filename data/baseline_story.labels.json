@@ -1,0 +1,18 @@
+{
+  "story_id": "baseline-story-v1",
+  "labels": {
+    "evt-1001": "auth-login",
+    "evt-1002": "auth-login",
+    "evt-1003": "auth-login",
+    "evt-1004": "checkout-payments",
+    "evt-1005": "checkout-payments",
+    "evt-1006": "dashboard-ui",
+    "evt-1007": "auth-login",
+    "evt-1008": "checkout-payments",
+    "evt-1009": "checkout-payments",
+    "evt-1010": "password-reset",
+    "evt-1011": "password-reset",
+    "evt-1012": "checkout-payments"
+  }
+}
+
