@@ -88,7 +88,12 @@ class MiniLMReranker:
         return ranked
 
 
+_RERANKER_CACHE = {}
+
 def load_reranker(config: DemoConfig) -> CandidateReranker:
+    if config.reranker_model_id in _RERANKER_CACHE:
+        return _RERANKER_CACHE[config.reranker_model_id]
+        
     cache_dir = Path(config.model_cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     reranker_cache_dir = cache_dir / "rerankers"
@@ -118,7 +123,9 @@ def load_reranker(config: DemoConfig) -> CandidateReranker:
             ),
             encoding="utf-8",
         )
-        return MiniLMReranker(model_id=config.reranker_model_id, backend=backend, fallback=fallback)
+        res = MiniLMReranker(model_id=config.reranker_model_id, backend=backend, fallback=fallback)
+        _RERANKER_CACHE[config.reranker_model_id] = res
+        return res
     except Exception:
         manifest_path.write_text(
             json.dumps(
@@ -132,4 +139,5 @@ def load_reranker(config: DemoConfig) -> CandidateReranker:
             ),
             encoding="utf-8",
         )
+        _RERANKER_CACHE[config.reranker_model_id] = fallback
         return fallback

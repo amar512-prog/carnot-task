@@ -113,6 +113,8 @@ class OllamaClusterJudge:
                 "options": {"temperature": 0},
             }
         ).encode("utf-8")
+        with open("/app/reports/ollama_log.txt", "a") as f:
+            f.write(f"--- OLLAMA REQUEST ---\n{body.decode('utf-8')}\n")
         req = request.Request(
             self.api_url.rstrip("/") + "/api/generate",
             data=body,
@@ -122,9 +124,14 @@ class OllamaClusterJudge:
         try:
             with request.urlopen(req, timeout=self.timeout_seconds) as response:
                 outer = json.loads(response.read().decode("utf-8"))
-        except (OSError, error.URLError, error.HTTPError, json.JSONDecodeError):
+                with open("/app/reports/ollama_log.txt", "a") as f:
+                    f.write(f"--- OLLAMA RESPONSE ---\n{json.dumps(outer)}\n")
+        except (OSError, error.URLError, error.HTTPError, json.JSONDecodeError) as e:
+            with open("/app/reports/ollama_log.txt", "a") as f:
+                f.write(f"--- OLLAMA ERROR ---\n{str(e)}\n")
             return None
-        raw = outer.get("response")
+        # raw = outer.get("response")
+        raw = outer.get("thinking")
         if not isinstance(raw, str):
             return None
         try:

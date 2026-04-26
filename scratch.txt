@@ -1,0 +1,332 @@
+
+root@649acead06d7:/app# python ./scripts/evaluate.py ./data/baseline_story.jsonl 
+Running approach 1 (Score Partition)...
+2026-04-26 07:50:24,516 [INFO] waiting to acquire replay maintenance lock 442001
+2026-04-26 07:50:24,516 [INFO] acquired replay maintenance lock 442001 (releases with transaction)
+2026-04-26 07:50:26,500 [INFO] Use pytorch device_name: cpu
+2026-04-26 07:50:26,500 [INFO] Load pretrained SentenceTransformer: codefuse-ai/F2LLM-v2-0.6B
+2026-04-26 07:50:35,787 [INFO] 2 prompts are loaded, with the keys: ['query', 'document']
+2026-04-26 07:50:37,328 [INFO] Use pytorch device: cpu
+2026-04-26 07:50:37,334 [INFO] starting to embed the event id evt-1001 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.56it/s]
+2026-04-26 07:50:37,730 [INFO] completed to embed the event id evt-1001 using 1 embeddings
+2026-04-26 07:50:37,734 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:37,735 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:37,738 [INFO] in case of approach 1, draft mention if added new event: created draft cluster c3ff043c-f46f-4230-86f5-64a87d7c0a24
+2026-04-26 07:50:37,739 [INFO] cluster assigned, event evt-1001 -> cluster c3ff043c-f46f-4230-86f5-64a87d7c0a24 (created_new_cluster)
+2026-04-26 07:50:37,739 [INFO] starting to embed the event id evt-1002 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.71it/s]
+2026-04-26 07:50:37,891 [INFO] completed to embed the event id evt-1002 using 1 embeddings
+2026-04-26 07:50:37,892 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:37,892 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:37,895 [INFO] in case of approach 1, draft mention if added new event: created draft cluster 4fe63258-c0aa-45a9-aa4e-7b59c4c204ef
+2026-04-26 07:50:37,895 [INFO] cluster assigned, event evt-1002 -> cluster 4fe63258-c0aa-45a9-aa4e-7b59c4c204ef (created_new_cluster)
+2026-04-26 07:50:37,896 [INFO] starting to embed the event id evt-1003 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  8.27it/s]
+2026-04-26 07:50:38,018 [INFO] completed to embed the event id evt-1003 using 1 embeddings
+2026-04-26 07:50:38,020 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:38,020 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:38,022 [INFO] starting to embed the event id evt-1004 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.79it/s]
+2026-04-26 07:50:38,171 [INFO] completed to embed the event id evt-1004 using 1 embeddings
+2026-04-26 07:50:38,173 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:38,173 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:38,176 [INFO] in case of approach 1, draft mention if added new event: created draft cluster b4fa118a-7b57-4c09-bfac-518caafe853f
+2026-04-26 07:50:38,177 [INFO] cluster assigned, event evt-1004 -> cluster b4fa118a-7b57-4c09-bfac-518caafe853f (created_new_cluster)
+2026-04-26 07:50:38,178 [INFO] starting to embed the event id evt-1005 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.66it/s]
+2026-04-26 07:50:38,357 [INFO] completed to embed the event id evt-1005 using 1 embeddings
+2026-04-26 07:50:38,358 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:38,358 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:38,361 [INFO] in case of approach 1, draft mention if added new event: created draft cluster 7106f402-f6bf-4008-8a6d-68f1b02a0ec2
+2026-04-26 07:50:38,361 [INFO] cluster assigned, event evt-1005 -> cluster 7106f402-f6bf-4008-8a6d-68f1b02a0ec2 (created_new_cluster)
+2026-04-26 07:50:38,362 [INFO] starting to embed the event id evt-1006 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.83it/s]
+2026-04-26 07:50:38,491 [INFO] completed to embed the event id evt-1006 using 1 embeddings
+2026-04-26 07:50:38,493 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:38,493 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:38,496 [INFO] in case of approach 1, draft mention if added new event: created draft cluster 79c6399f-37b1-40fb-82e6-0f04a824aa07
+2026-04-26 07:50:38,496 [INFO] cluster assigned, event evt-1006 -> cluster 79c6399f-37b1-40fb-82e6-0f04a824aa07 (created_new_cluster)
+2026-04-26 07:50:38,497 [INFO] starting to embed the event id evt-1007 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  8.18it/s]
+2026-04-26 07:50:38,621 [INFO] completed to embed the event id evt-1007 using 1 embeddings
+2026-04-26 07:50:38,622 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:38,622 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:38,626 [INFO] in case of approach 1, draft mention if added new event: created draft cluster 62ef47e6-dc62-4a4d-9ebe-b48c3f5040fb
+2026-04-26 07:50:38,626 [INFO] cluster assigned, event evt-1007 -> cluster 62ef47e6-dc62-4a4d-9ebe-b48c3f5040fb (created_new_cluster)
+2026-04-26 07:50:38,626 [INFO] starting to embed the event id evt-1008 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  8.12it/s]
+2026-04-26 07:50:38,751 [INFO] completed to embed the event id evt-1008 using 1 embeddings
+2026-04-26 07:50:38,752 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:38,752 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:38,756 [INFO] in case of approach 1, draft mention if added new event: created draft cluster 2ebd6dac-f5f5-4c65-a1d1-0c5dfcbf4979
+2026-04-26 07:50:38,756 [INFO] cluster assigned, event evt-1008 -> cluster 2ebd6dac-f5f5-4c65-a1d1-0c5dfcbf4979 (created_new_cluster)
+2026-04-26 07:50:38,756 [INFO] starting to embed the event id evt-1009 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.85it/s]
+2026-04-26 07:50:38,886 [INFO] completed to embed the event id evt-1009 using 1 embeddings
+2026-04-26 07:50:38,887 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:38,887 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:38,891 [INFO] in case of approach 1, draft mention if added new event: created draft cluster ac95214a-438c-4581-a05c-8dde31deeafb
+2026-04-26 07:50:38,891 [INFO] cluster assigned, event evt-1009 -> cluster ac95214a-438c-4581-a05c-8dde31deeafb (created_new_cluster)
+2026-04-26 07:50:38,891 [INFO] starting to embed the event id evt-1010 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.92it/s]
+2026-04-26 07:50:39,020 [INFO] completed to embed the event id evt-1010 using 1 embeddings
+2026-04-26 07:50:39,021 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:39,021 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:39,025 [INFO] in case of approach 1, draft mention if added new event: created draft cluster 8fd630d0-0a77-4508-894e-06a3aaf82850
+2026-04-26 07:50:39,025 [INFO] cluster assigned, event evt-1010 -> cluster 8fd630d0-0a77-4508-894e-06a3aaf82850 (created_new_cluster)
+2026-04-26 07:50:39,026 [INFO] starting to embed the event id evt-1011 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  8.30it/s]
+2026-04-26 07:50:39,148 [INFO] completed to embed the event id evt-1011 using 1 embeddings
+2026-04-26 07:50:39,149 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:39,149 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:39,154 [INFO] in case of approach 1, draft mention if added new event: created draft cluster 01593d86-6a91-4159-911b-b222dace3564
+2026-04-26 07:50:39,154 [INFO] cluster assigned, event evt-1011 -> cluster 01593d86-6a91-4159-911b-b222dace3564 (created_new_cluster)
+2026-04-26 07:50:39,154 [INFO] starting to embed the event id evt-1012 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.72it/s]
+2026-04-26 07:50:39,305 [INFO] completed to embed the event id evt-1012 using 1 embeddings
+2026-04-26 07:50:39,306 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:39,306 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:39,311 [INFO] in case of approach 1, draft mention if added new event: created draft cluster cfaab5cf-7585-42ae-a871-f617d1451f6f
+2026-04-26 07:50:39,312 [INFO] cluster assigned, event evt-1012 -> cluster cfaab5cf-7585-42ae-a871-f617d1451f6f (created_new_cluster)
+2026-04-26 07:50:39,316 [INFO] transaction committed, all locks released
+Running maintenance worker for approach 1...
+2026-04-26 07:50:39,325 [INFO] waiting to acquire replay maintenance lock 442001
+2026-04-26 07:50:39,325 [INFO] acquired replay maintenance lock 442001 (releases with transaction)
+2026-04-26 07:50:39,327 [INFO] maintenance - started scan of 0 draft clusters
+2026-04-26 07:50:39,327 [INFO] maintenance - completed scan of draft clusters. Promoted 11 to active.
+2026-04-26 07:50:39,328 [INFO] maintenance - transaction committed, replay maintenance lock released
+Running approach 2 (Three Gates)...
+2026-04-26 07:50:39,349 [INFO] waiting to acquire replay maintenance lock 442001
+2026-04-26 07:50:39,350 [INFO] acquired replay maintenance lock 442001 (releases with transaction)
+2026-04-26 07:50:39,362 [INFO] starting to embed the event id evt-1001 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  8.13it/s]
+2026-04-26 07:50:39,488 [INFO] completed to embed the event id evt-1001 using 1 embeddings
+2026-04-26 07:50:39,489 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:39,489 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:39,490 [INFO] starting rerank for input event id evt-1001, input text: Login errors are spiking in the auth service...
+2026-04-26 07:50:39,490 [INFO] completed rerank for input event id evt-1001, result: []
+2026-04-26 07:50:39,492 [INFO] llm output - starting
+2026-04-26 07:50:39,492 [INFO] llm output - completed, decision: none, confidence: 0.0
+2026-04-26 07:50:46,057 [INFO] cluster assigned, event evt-1001 -> cluster b5208af7-cb47-4038-a1d2-6d6f014d7a6d (created_new_cluster)
+2026-04-26 07:50:46,066 [INFO] starting to embed the event id evt-1002 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.79it/s]
+2026-04-26 07:50:46,647 [INFO] completed to embed the event id evt-1002 using 1 embeddings
+2026-04-26 07:50:46,649 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:46,649 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:46,653 [INFO] starting rerank for input event id evt-1002, input text: Authentication failures are rising fast for sign i...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  8.47it/s]
+2026-04-26 07:50:46,773 [INFO] completed rerank for input event id evt-1002, result: [('b5208af7-cb47-4038-a1d2-6d6f014d7a6d', 0.05796272434767455)]
+2026-04-26 07:50:46,773 [INFO] llm output - starting
+2026-04-26 07:50:59,706 [INFO] llm output - completed, decision: cluster_a, confidence: 0.85
+2026-04-26 07:50:59,720 [INFO] cluster assigned, event evt-1002 -> cluster b5208af7-cb47-4038-a1d2-6d6f014d7a6d (joined_existing_cluster)
+2026-04-26 07:50:59,721 [INFO] starting to embed the event id evt-1003 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.17it/s]
+2026-04-26 07:50:59,892 [INFO] completed to embed the event id evt-1003 using 1 embeddings
+2026-04-26 07:50:59,893 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:50:59,894 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:50:59,896 [INFO] starting to embed the event id evt-1004 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.77it/s]
+2026-04-26 07:51:00,026 [INFO] completed to embed the event id evt-1004 using 1 embeddings
+2026-04-26 07:51:00,028 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:51:00,028 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:51:00,029 [INFO] starting rerank for input event id evt-1004, input text: Checkout service is timing out for card payments...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 21.62it/s]
+2026-04-26 07:51:00,079 [INFO] completed rerank for input event id evt-1004, result: [('b5208af7-cb47-4038-a1d2-6d6f014d7a6d', 1.3943291428390853e-05)]
+2026-04-26 07:51:00,080 [INFO] llm output - starting
+2026-04-26 07:51:09,530 [INFO] llm output - completed, decision: none, confidence: 0.95
+2026-04-26 07:51:14,019 [INFO] cluster assigned, event evt-1004 -> cluster f8a0fb6c-ff8a-4d79-ae54-a7810b42353a (created_new_cluster)
+2026-04-26 07:51:14,022 [INFO] starting to embed the event id evt-1005 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.84it/s]
+2026-04-26 07:51:14,578 [INFO] completed to embed the event id evt-1005 using 1 embeddings
+2026-04-26 07:51:14,591 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:51:14,591 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:51:14,593 [INFO] starting rerank for input event id evt-1005, input text: Card payment flow keeps timing out in checkout...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.12it/s]
+2026-04-26 07:51:14,763 [INFO] completed rerank for input event id evt-1005, result: [('f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 0.4546753066940398), ('b5208af7-cb47-4038-a1d2-6d6f014d7a6d', 1.163785679778121e-05)]
+2026-04-26 07:51:14,765 [INFO] llm output - starting
+2026-04-26 07:51:53,017 [INFO] llm output - completed, decision: cluster_a, confidence: 0.8
+2026-04-26 07:51:53,044 [INFO] cluster assigned, event evt-1005 -> cluster f8a0fb6c-ff8a-4d79-ae54-a7810b42353a (joined_existing_cluster)
+2026-04-26 07:51:53,048 [INFO] starting to embed the event id evt-1006 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.78it/s]
+2026-04-26 07:51:53,634 [INFO] completed to embed the event id evt-1006 using 1 embeddings
+2026-04-26 07:51:53,642 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:51:53,643 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:51:53,644 [INFO] starting rerank for input event id evt-1006, input text: Weekly sales dashboard needs a brighter chart pale...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.32it/s]
+2026-04-26 07:51:53,786 [INFO] completed rerank for input event id evt-1006, result: [('f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 1.1446181816493591e-05), ('b5208af7-cb47-4038-a1d2-6d6f014d7a6d', 1.131556112157735e-05)]
+2026-04-26 07:51:53,787 [INFO] llm output - starting
+2026-04-26 07:52:12,307 [INFO] llm output - completed, decision: none, confidence: 0.95
+2026-04-26 07:53:41,289 [INFO] cluster assigned, event evt-1006 -> cluster 9619cc00-d602-42bf-a09e-d7f7b08a2880 (created_new_cluster)
+2026-04-26 07:53:41,295 [INFO] starting to embed the event id evt-1007 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.45s/it]
+2026-04-26 07:53:42,824 [INFO] completed to embed the event id evt-1007 using 1 embeddings
+2026-04-26 07:53:42,829 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:53:42,829 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:53:42,832 [INFO] starting rerank for input event id evt-1007, input text: Users still cannot sign in because auth failures c...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 12.01it/s]
+2026-04-26 07:53:42,917 [INFO] completed rerank for input event id evt-1007, result: [('b5208af7-cb47-4038-a1d2-6d6f014d7a6d', 2.189325566221487e-05), ('9619cc00-d602-42bf-a09e-d7f7b08a2880', 1.2414810709006505e-05)]
+2026-04-26 07:53:42,918 [INFO] llm output - starting
+2026-04-26 07:54:15,630 [INFO] llm output - completed, decision: none, confidence: 0.95
+2026-04-26 07:54:21,434 [INFO] cluster assigned, event evt-1007 -> cluster 14c3b073-4b71-4e63-a926-d31ca4dec138 (created_new_cluster)
+2026-04-26 07:54:21,437 [INFO] starting to embed the event id evt-1008 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.84it/s]
+2026-04-26 07:54:21,812 [INFO] completed to embed the event id evt-1008 using 1 embeddings
+2026-04-26 07:54:21,816 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:54:21,816 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:54:21,820 [INFO] starting rerank for input event id evt-1008, input text: Gateway returns 502 during checkout payment reques...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 12.59it/s]
+2026-04-26 07:54:21,901 [INFO] completed rerank for input event id evt-1008, result: [('f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 0.020671776121795354), ('b5208af7-cb47-4038-a1d2-6d6f014d7a6d', 1.4767641836562332e-05)]
+2026-04-26 07:54:21,903 [INFO] llm output - starting
+2026-04-26 07:54:48,905 [INFO] llm output - completed, decision: cluster_a, confidence: 0.95
+2026-04-26 07:54:48,921 [INFO] cluster assigned, event evt-1008 -> cluster f8a0fb6c-ff8a-4d79-ae54-a7810b42353a (joined_existing_cluster)
+2026-04-26 07:54:48,925 [INFO] starting to embed the event id evt-1009 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.88it/s]
+2026-04-26 07:54:49,476 [INFO] completed to embed the event id evt-1009 using 1 embeddings
+2026-04-26 07:54:49,481 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:54:49,481 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:54:49,485 [INFO] starting rerank for input event id evt-1009, input text: Payment requests fail with 502 errors in checkout ...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 12.28it/s]
+2026-04-26 07:54:49,568 [INFO] completed rerank for input event id evt-1009, result: [('f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 0.001962266535985033), ('14c3b073-4b71-4e63-a926-d31ca4dec138', 0.0003850809139448751)]
+2026-04-26 07:54:49,570 [INFO] llm output - starting
+2026-04-26 07:55:12,724 [INFO] llm output - completed, decision: cluster_a, confidence: 0.95
+2026-04-26 07:55:12,737 [INFO] cluster assigned, event evt-1009 -> cluster f8a0fb6c-ff8a-4d79-ae54-a7810b42353a (joined_existing_cluster)
+2026-04-26 07:55:12,739 [INFO] starting to embed the event id evt-1010 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.95it/s]
+2026-04-26 07:55:13,265 [INFO] completed to embed the event id evt-1010 using 1 embeddings
+2026-04-26 07:55:13,268 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:55:13,268 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:55:13,271 [INFO] starting rerank for input event id evt-1010, input text: Password reset links are erroring out for several ...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 12.42it/s]
+2026-04-26 07:55:13,354 [INFO] completed rerank for input event id evt-1010, result: [('b5208af7-cb47-4038-a1d2-6d6f014d7a6d', 0.015464307856299816), ('14c3b073-4b71-4e63-a926-d31ca4dec138', 0.002581287170298771)]
+2026-04-26 07:55:13,356 [INFO] llm output - starting
+2026-04-26 07:55:36,287 [INFO] llm output - completed, decision: cluster_a, confidence: 0.85
+2026-04-26 07:55:36,304 [INFO] cluster assigned, event evt-1010 -> cluster b5208af7-cb47-4038-a1d2-6d6f014d7a6d (joined_existing_cluster)
+2026-04-26 07:55:36,306 [INFO] starting to embed the event id evt-1011 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.00it/s]
+2026-04-26 07:55:36,653 [INFO] completed to embed the event id evt-1011 using 1 embeddings
+2026-04-26 07:55:36,656 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:55:36,656 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:55:36,660 [INFO] starting rerank for input event id evt-1011, input text: Users report reset links failing during password r...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 10.90it/s]
+2026-04-26 07:55:36,754 [INFO] completed rerank for input event id evt-1011, result: [('14c3b073-4b71-4e63-a926-d31ca4dec138', 0.20341055914219966), ('b5208af7-cb47-4038-a1d2-6d6f014d7a6d', 0.000775225898511629)]
+2026-04-26 07:55:36,755 [INFO] llm output - starting
+2026-04-26 07:56:07,055 [INFO] llm output - completed, decision: cluster_a, confidence: 0.85
+2026-04-26 07:56:07,071 [INFO] cluster assigned, event evt-1011 -> cluster 14c3b073-4b71-4e63-a926-d31ca4dec138 (joined_existing_cluster)
+2026-04-26 07:56:07,074 [INFO] starting to embed the event id evt-1012 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.62it/s]
+2026-04-26 07:56:07,711 [INFO] completed to embed the event id evt-1012 using 1 embeddings
+2026-04-26 07:56:07,717 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:56:07,718 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:56:07,723 [INFO] starting rerank for input event id evt-1012, input text: Checkout payment issue still reproduces with gatew...
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.97it/s]
+2026-04-26 07:56:07,852 [INFO] completed rerank for input event id evt-1012, result: [('f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 0.0007438687234013553), ('14c3b073-4b71-4e63-a926-d31ca4dec138', 1.8214631643347912e-05)]
+2026-04-26 07:56:07,854 [INFO] llm output - starting
+2026-04-26 07:56:48,622 [INFO] llm output - completed, decision: none, confidence: 0.95
+2026-04-26 07:56:57,585 [INFO] cluster assigned, event evt-1012 -> cluster a5478ba2-c179-4ebc-b9eb-0cde7ab508cb (created_new_cluster)
+2026-04-26 07:56:57,613 [INFO] transaction committed, all locks released
+Running approach 3 (HDBSCAN)...
+2026-04-26 07:56:57,962 [INFO] waiting to acquire replay maintenance lock 442001
+2026-04-26 07:56:57,964 [INFO] acquired replay maintenance lock 442001 (releases with transaction)
+2026-04-26 07:56:58,046 [INFO] starting to embed the event id evt-1001 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.23s/it]
+2026-04-26 07:56:59,388 [INFO] completed to embed the event id evt-1001 using 1 embeddings
+2026-04-26 07:56:59,402 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:56:59,403 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:57:06,082 [INFO] cluster assigned, event evt-1001 -> cluster d42fa4fb-45a6-4a83-9860-8b3978af6e37 (created_new_cluster)
+2026-04-26 07:57:06,090 [INFO] starting to embed the event id evt-1002 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.12s/it]
+2026-04-26 07:57:07,255 [INFO] completed to embed the event id evt-1002 using 1 embeddings
+2026-04-26 07:57:07,259 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:07,260 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:12,708 [INFO] cluster assigned, event evt-1002 -> cluster d617dcb9-5555-4842-bfbc-fc2e6f4dc2cd (created_new_cluster)
+2026-04-26 07:57:12,785 [INFO] starting to embed the event id evt-1003 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.30it/s]
+2026-04-26 07:57:13,266 [INFO] completed to embed the event id evt-1003 using 1 embeddings
+2026-04-26 07:57:13,281 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:13,282 [INFO] acquired bucket lock 255 (releases with transaction)
+2026-04-26 07:57:13,289 [INFO] starting to embed the event id evt-1004 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.67it/s]
+2026-04-26 07:57:13,578 [INFO] completed to embed the event id evt-1004 using 1 embeddings
+2026-04-26 07:57:13,594 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:13,594 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:24,503 [INFO] cluster assigned, event evt-1004 -> cluster 8277e847-80e5-4d40-9bc3-5293a6b95f0c (created_new_cluster)
+2026-04-26 07:57:24,520 [INFO] starting to embed the event id evt-1005 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.16it/s]
+2026-04-26 07:57:24,859 [INFO] completed to embed the event id evt-1005 using 1 embeddings
+2026-04-26 07:57:24,874 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:24,874 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:24,889 [INFO] cluster assigned, event evt-1005 -> cluster d617dcb9-5555-4842-bfbc-fc2e6f4dc2cd (joined_existing_cluster)
+2026-04-26 07:57:24,891 [INFO] starting to embed the event id evt-1006 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.72it/s]
+2026-04-26 07:57:25,120 [INFO] completed to embed the event id evt-1006 using 1 embeddings
+2026-04-26 07:57:25,145 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:25,146 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:33,359 [INFO] cluster assigned, event evt-1006 -> cluster 3a23c00c-3ca5-49ff-aa6e-722f50eeb303 (created_new_cluster)
+2026-04-26 07:57:33,384 [INFO] starting to embed the event id evt-1007 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.46it/s]
+2026-04-26 07:57:34,097 [INFO] completed to embed the event id evt-1007 using 1 embeddings
+2026-04-26 07:57:34,109 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:34,109 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:34,129 [INFO] cluster assigned, event evt-1007 -> cluster d617dcb9-5555-4842-bfbc-fc2e6f4dc2cd (joined_existing_cluster)
+2026-04-26 07:57:34,131 [INFO] starting to embed the event id evt-1008 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.84it/s]
+2026-04-26 07:57:34,349 [INFO] completed to embed the event id evt-1008 using 1 embeddings
+2026-04-26 07:57:34,362 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:34,363 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:34,377 [INFO] cluster assigned, event evt-1008 -> cluster 8277e847-80e5-4d40-9bc3-5293a6b95f0c (joined_existing_cluster)
+2026-04-26 07:57:34,379 [INFO] starting to embed the event id evt-1009 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.47it/s]
+2026-04-26 07:57:34,617 [INFO] completed to embed the event id evt-1009 using 1 embeddings
+2026-04-26 07:57:34,630 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:34,630 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:34,645 [INFO] cluster assigned, event evt-1009 -> cluster 8277e847-80e5-4d40-9bc3-5293a6b95f0c (joined_existing_cluster)
+2026-04-26 07:57:34,647 [INFO] starting to embed the event id evt-1010 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.66it/s]
+2026-04-26 07:57:34,878 [INFO] completed to embed the event id evt-1010 using 1 embeddings
+2026-04-26 07:57:34,892 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:34,893 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:39,774 [INFO] cluster assigned, event evt-1010 -> cluster f95b0323-09ff-4a93-9489-c0ce72e39553 (created_new_cluster)
+2026-04-26 07:57:39,798 [INFO] starting to embed the event id evt-1011 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.79it/s]
+2026-04-26 07:57:40,301 [INFO] completed to embed the event id evt-1011 using 1 embeddings
+2026-04-26 07:57:40,315 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:40,315 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:40,334 [INFO] cluster assigned, event evt-1011 -> cluster f95b0323-09ff-4a93-9489-c0ce72e39553 (joined_existing_cluster)
+2026-04-26 07:57:40,336 [INFO] starting to embed the event id evt-1012 using 1 embeddings
+Batches: 100%|███████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.38it/s]
+2026-04-26 07:57:40,641 [INFO] completed to embed the event id evt-1012 using 1 embeddings
+2026-04-26 07:57:40,654 [INFO] waiting to acquire bucket lock 255
+2026-04-26 07:57:40,655 [INFO] acquired bucket lock 255 (releases with transaction)
+/usr/local/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+2026-04-26 07:57:40,676 [INFO] cluster assigned, event evt-1012 -> cluster 8277e847-80e5-4d40-9bc3-5293a6b95f0c (joined_existing_cluster)
+2026-04-26 07:57:40,686 [INFO] transaction committed, all locks released
+             Clustering Evaluation Results             
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━┓
+┃ Approach            ┃ Precision ┃ Recall ┃ F1 Score ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━┩
+│ 1 - Score Partition │    1.0000 │ 0.0588 │   0.1111 │
+│ 2 - Three Gates     │    0.6923 │ 0.5294 │   0.6000 │
+│ 3 - HDBSCAN         │    0.8182 │ 0.5294 │   0.6429 │
+└─────────────────────┴───────────┴────────┴──────────┘
+Saved results to /app/./scripts/reports/evaluation_results.json
+root@649acead06d7:/app# 

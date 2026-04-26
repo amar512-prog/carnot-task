@@ -78,6 +78,10 @@ class MaintenanceWorker:
             )
             drafts = cluster_repo.list_recent_draft_clusters(self.config.draft_merge_window_minutes)
             scanned = len(drafts)
+            
+            import logging
+            logging.info(f"maintenance - started scan of {scanned} draft clusters")
+
             event_embeddings = event_repo.fetch_event_embeddings(
                 [event_id for draft in drafts for event_id in draft.exemplar_event_ids],
                 vector_mode=active_vector_mode,
@@ -87,8 +91,12 @@ class MaintenanceWorker:
             while merged_any:
                 merged_any = False
                 drafts = cluster_repo.list_recent_draft_clusters(self.config.draft_merge_window_minutes)
+                total_comparisons = len(drafts) * (len(drafts) - 1) // 2
+                comparison_idx = 0
                 for idx, left in enumerate(drafts):
                     for right in drafts[idx + 1 :]:
+                        comparison_idx += 1
+                        logging.info(f"maintenance - running scan of {comparison_idx}/{total_comparisons} draft cluster scan ({left.cluster_id} vs {right.cluster_id})")
                         link_count = int(left.candidate_parent_cluster_id == right.cluster_id) + int(
                             right.candidate_parent_cluster_id == left.cluster_id
                         )
@@ -119,6 +127,7 @@ class MaintenanceWorker:
                             winner = left if left.member_count >= right.member_count else right
                             loser = right if winner.cluster_id == left.cluster_id else left
                             updated = cluster_repo.merge_clusters(winner=winner, loser=loser, decision=decision)
+                            logging.info(f"maintenance - evidence found to merge {left.cluster_id} and {right.cluster_id}: {decision.evidence_summary}. assigned to new/existing cluster {updated.cluster_id}, removed {loser.cluster_id}")
                             event_repo.publish_stream_event(
                                 "merge",
                                 {
@@ -131,10 +140,13 @@ class MaintenanceWorker:
                             merged += 1
                             merged_any = True
                             break
-                        skipped += 1
+                        else:
+                            logging.info(f"maintenance - evidence not found for {left.cluster_id} and {right.cluster_id}")
+                            skipped += 1
                     if merged_any:
                         break
             promoted = cluster_repo.promote_old_drafts(self.config.draft_merge_window_minutes)
+            logging.info(f"maintenance - completed scan of draft clusters. Promoted {promoted} to active.")
             if promoted or backfilled_events or backfilled_clusters:
                 event_repo.publish_stream_event(
                     "maintenance",
@@ -149,6 +161,8 @@ class MaintenanceWorker:
                     },
                 )
             conn.commit()
+            import logging
+            logging.info("maintenance - transaction committed, replay maintenance lock released")
         return {
             "scanned": scanned,
             "merged": merged,

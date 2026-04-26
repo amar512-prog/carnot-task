@@ -123,7 +123,12 @@ class SentenceTransformerEmbeddingModel(BaseEmbeddingModel):
         )
 
 
+_MODEL_CACHE = {}
+
 def load_model(config: DemoConfig) -> EmbeddingModel:
+    if config.embedding_model_id in _MODEL_CACHE:
+        return _MODEL_CACHE[config.embedding_model_id]
+    
     cache_dir = Path(config.model_cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     manifest_path = cache_dir / "model_manifest.json"
@@ -143,6 +148,7 @@ def load_model(config: DemoConfig) -> EmbeddingModel:
             "notes": "Deterministic sparse bag-of-words projection used for degraded mode and resource-constrained runs.",
         }
         manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+        _MODEL_CACHE[config.embedding_model_id] = projection_backend
         return projection_backend
     try:
         from sentence_transformers import SentenceTransformer
@@ -165,6 +171,7 @@ def load_model(config: DemoConfig) -> EmbeddingModel:
             "notes": "Primary semantic model with a deterministic stable-projection companion vector for degraded-mode clustering.",
         }
         manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+        _MODEL_CACHE[config.embedding_model_id] = model
         return model
     except Exception:
         manifest = {
@@ -175,6 +182,7 @@ def load_model(config: DemoConfig) -> EmbeddingModel:
             "notes": "Fallback deterministic projection used because sentence-transformers was unavailable.",
         }
         manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+        _MODEL_CACHE[config.embedding_model_id] = projection_backend
         return projection_backend
 
 

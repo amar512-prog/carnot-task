@@ -9,8 +9,11 @@ class RuntimeStateRepository:
         self.conn = conn
 
     def acquire_replay_maintenance_lock(self) -> None:
+        import logging
+        logging.info(f"waiting to acquire replay maintenance lock {REPLAY_MAINTENANCE_LOCK_KEY}")
         with self.conn.cursor() as cur:
             cur.execute("SELECT pg_advisory_xact_lock(%s)", (REPLAY_MAINTENANCE_LOCK_KEY,))
+        logging.info(f"acquired replay maintenance lock {REPLAY_MAINTENANCE_LOCK_KEY} (releases with transaction)")
 
     def get_bool_flag(self, key: str, default: bool = False) -> bool:
         with self.conn.cursor() as cur:

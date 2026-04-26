@@ -11,6 +11,7 @@ A distributable interview demo that continuously ingests text events, clusters s
 ## Quick Start
 ```bash
 docker compose up --build
+docker compose exec ollama ollama pull qwen3:4b-thinking
 ```
 
 In another shell:

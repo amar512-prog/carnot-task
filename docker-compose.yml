@@ -1,4 +1,20 @@
 services:
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+  ollama-pull:
+    image: ollama/ollama
+    restart: "no"
+    depends_on:
+      - ollama
+    entrypoint: [ "sh", "-c", "sleep 5 && ollama pull qwen3:4b-thinking" ]
+    environment:
+      - OLLAMA_HOST=ollama:11434
+
   db:
     image: pgvector/pgvector:pg16
     environment:
@@ -53,3 +69,4 @@ services:
 
 volumes:
   pgdata:
+  ollama_data:

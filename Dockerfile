@@ -12,6 +12,7 @@ COPY data ./data
 COPY docs ./docs
 COPY sql ./sql
 COPY tests ./tests
+COPY scripts ./scripts
 
 RUN pip install --no-cache-dir .
 

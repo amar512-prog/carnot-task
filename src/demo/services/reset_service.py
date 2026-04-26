@@ -25,13 +25,14 @@ class ResetService:
             conn.commit()
             return count
 
-    def reset_to_baseline(self, *, rehydrate_runtime: bool = True) -> dict[str, object]:
+    def reset_to_baseline(self, *, rehydrate_runtime: bool = True, approach: int = 2) -> dict[str, object]:
         ensure_schema()
         story_events = load_story_events(self.config.baseline_story_path)
         return self.reset_with_story(
             story_events,
             rehydrate_runtime=rehydrate_runtime,
             persist_baseline=True,
+            approach=approach,
         )
 
     def reset_with_story(
@@ -40,6 +41,7 @@ class ResetService:
         *,
         rehydrate_runtime: bool = True,
         persist_baseline: bool = True,
+        approach: int = 2,
     ) -> dict[str, object]:
         ensure_schema()
         restored_clusters: set[str] = set()
@@ -70,6 +72,8 @@ class ResetService:
                     judge=load_judge(self.config),
                 )
                 for event in story_events:
+                    import logging
+                    event.metadata = {**getattr(event, "metadata", {}), "approach": approach}
                     result = clustering_service.assign_event(conn, event)
                     restored_clusters.add(result.cluster_id)
             repo.publish_stream_event(
@@ -86,6 +90,8 @@ class ResetService:
                 },
             )
             conn.commit()
+            import logging
+            logging.info("transaction committed, all locks released")
             return {
                 "deleted_events": deleted["events"],
                 "deleted_clusters": deleted["clusters"],

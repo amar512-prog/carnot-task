@@ -15,8 +15,11 @@ class ClusterRepository:
         self.conn = conn
 
     def acquire_bucket_lock(self, bucket_key: int) -> None:
+        import logging
+        logging.info(f"waiting to acquire bucket lock {bucket_key}")
         with self.conn.cursor() as cur:
             cur.execute("SELECT pg_advisory_xact_lock(%s)", (bucket_key,))
+        logging.info(f"acquired bucket lock {bucket_key} (releases with transaction)")
 
     def find_recent_candidates(
         self,

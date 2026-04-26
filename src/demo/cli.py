@@ -46,6 +46,7 @@ def replay(
         "--rebase-now",
         help="Compress the story into the recent draft-merge window while preserving event order.",
     ),
+    approach: int = typer.Option(2, "--approach", help="Algorithm approach to use (1 = Score Partition, 2 = Three Gates, 3 = HDBSCAN)."),
 ) -> None:
     """Replay the configured story through the API."""
     config = load_config()
@@ -68,12 +69,14 @@ def replay(
         )
         api_url = get_api_url().rstrip("/")
         for event in story:
+            event_metadata = dict(event.metadata or {})
+            event_metadata["approach"] = approach
             payload = {
                 "event_id": event.event_id,
                 "source": event.source,
                 "occurred_at": event.occurred_at.isoformat(),
                 "text": event.text,
-                "metadata": event.metadata,
+                "metadata": event_metadata,
             }
             response = _post_json(f"{api_url}/events", payload)
             console.print(
@@ -86,14 +89,14 @@ def replay(
 
 
 @app.command()
-def send(text: str, source: str = "manual") -> None:
+def send(text: str, source: str = "manual", approach: int = typer.Option(2, "--approach", help="Algorithm approach to use (1 = Score Partition, 2 = Three Gates, 3 = HDBSCAN).")) -> None:
     """Send a single live event through the API."""
     payload = {
         "event_id": f"manual-{uuid.uuid4()}",
         "source": source,
         "occurred_at": datetime.now(timezone.utc).isoformat(),
         "text": text,
-        "metadata": {"manual": True},
+        "metadata": {"manual": True, "approach": approach},
     }
     response = _post_json(f"{get_api_url().rstrip('/')}/events", payload)
     console.print_json(data=response)
@@ -106,11 +109,11 @@ def watch() -> None:
 
 
 @app.command()
-def reset() -> None:
+def reset(approach: int = typer.Option(2, "--approach", help="Algorithm approach to use (1 = Score Partition, 2 = Three Gates, 3 = HDBSCAN).")) -> None:
     """Wipe runtime DB state and restore the baseline story."""
     config = load_config()
     wait_for_db()
-    summary = ResetService(config).reset_to_baseline()
+    summary = ResetService(config).reset_to_baseline(approach=approach)
     console.print_json(data=summary)
 
 
