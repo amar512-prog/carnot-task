@@ -142,6 +142,7 @@ class OllamaClusterJudge:
     def _decision_prompt(self, *, event_text: str, candidates: list[RerankedCandidate]) -> str:
         lines = [
             "You are deciding whether a new event belongs to existing incident clusters.",
+            "Base your decision solely on the event text and the provided cluster summaries text and Gate2 score",
             "Return only JSON with keys: decision, confidence, reason.",
             "Allowed decisions: cluster_a, cluster_b, both, none.",
             "",

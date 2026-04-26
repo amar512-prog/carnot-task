@@ -5,54 +5,54 @@ Candidates: []
 Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
 --- JUDGE INPUT ---
 Event: Authentication failures are rising fast for sign in
-Candidates: ['8cfdf65e-14dc-47e1-8092-8d4b13ee92b9']
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.3239732004993976e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.0, Reason: The event text 'Authentication failures are rising fast for sign in' directly matches the cluster A summary 'Login errors are increasing in the authentication service.' Both phrases describe an increase in authentication-related errors, with 'rising fast' aligning with 'increasing' and 'sign in' corresponding to 'login'. The cluster B is unavailable, so it cannot be considered.
 --- JUDGE INPUT ---
 Event: Checkout service is timing out for card payments
-Candidates: ['1a5629e9-6b64-4289-8767-c9ffb93bdf30', '8cfdf65e-14dc-47e1-8092-8d4b13ee92b9']
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.1591037462477027e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: none, Confidence: 0.95, Reason: The event describes checkout service timing out for card payments, while Cluster A's summary mentions increasing login errors in the authentication service. These are distinct issues with no overlap in the services or error types. The candidate cluster is unavailable for this decision, so the event does not belong to any cluster.
 --- JUDGE INPUT ---
 Event: Card payment flow keeps timing out in checkout
-Candidates: ['06e1d4c4-6cc1-4f38-8b0d-0568c891bb10', '1a5629e9-6b64-4289-8767-c9ffb93bdf30']
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9964893742399832, Reason: Top reranked candidate exceeds the join threshold.
+Decision: cluster_a, Confidence: 0.0, Reason: The event text 'Card payment flow keeps timing out in checkout' directly matches the Cluster A summary 'checkout-payments: Checkout service is timing out for card payments'. Both describe timing out issues specifically with card payments during the checkout process. Cluster B is about login errors in authentication service, which is unrelated to the event.
 --- JUDGE INPUT ---
 Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['8cfdf65e-14dc-47e1-8092-8d4b13ee92b9', '1a5629e9-6b64-4289-8767-c9ffb93bdf30']
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', '0960d596-362e-49ce-8327-e562166d8868']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.1778014727931151e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: none, Confidence: 0.0, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard. The candidate clusters are about login errors increasing in the authentication service (Cluster A) and checkout service timing out for card payments (Cluster B). There is no overlap in the topics or issues described between the event and the clusters. The event is purely a UI/UX improvement request, while the clusters are related to backend service issues (authentication and payment processing). The gate scores are not relevant for the decision as per instructions.
 --- JUDGE INPUT ---
 Event: Users still cannot sign in because auth failures continue
-Candidates: ['1a5629e9-6b64-4289-8767-c9ffb93bdf30', '8cfdf65e-14dc-47e1-8092-8d4b13ee92b9']
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 'b5db2c85-9608-46c4-b32e-fdc77bd3eabf']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9021300318373171, Reason: Top reranked candidate exceeds the join threshold.
+Decision: none, Confidence: 0.0, Reason: The event text mentions users still cannot sign in due to authentication failures, which is unrelated to the weekly sales dashboard update described in Cluster B. Cluster A's summary talks about login errors increasing in the authentication service, but the event text does not provide specific details about increasing login errors or authentication service issues. The event is about ongoing authentication failures, while Cluster A's summary is about increasing login errors, which may be related but the event text does not explicitly confirm the increasing trend or the same context as Cluster A. The Gate scores for Cluster A are 0.25 and 0.0, indicating low confidence in the match, and Cluster B has 0.0 scores, so it's clearly not related.
 --- JUDGE INPUT ---
 Event: Gateway returns 502 during checkout payment requests
-Candidates: ['06e1d4c4-6cc1-4f38-8b0d-0568c891bb10', '1a5629e9-6b64-4289-8767-c9ffb93bdf30']
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.008162121809426957, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.0, Reason: The event text mentions 'Gateway returns 502 during checkout payment requests', which directly relates to checkout payments. Cluster A's summary states 'Checkout service is timing out for card payments', indicating a similar issue with checkout payments. The 502 error typically indicates a gateway or service timeout, aligning with Cluster A's description. Cluster B is about login errors in authentication, which is unrelated to payment requests.
 --- JUDGE INPUT ---
 Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['31a54601-304a-4d72-a50d-56c74b0f41fd', '06e1d4c4-6cc1-4f38-8b0d-0568c891bb10']
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9956490703992338, Reason: Top reranked candidate exceeds the join threshold.
+Decision: cluster_a, Confidence: 0.0, Reason: The event describes payment requests failing with 502 errors in the checkout gateway, which directly relates to the cluster A summary about checkout service timing out for card payments. Both involve checkout payment issues, while cluster B is about login errors in authentication service, which is unrelated.
 --- JUDGE INPUT ---
 Event: Password reset links are erroring out for several users
-Candidates: ['8cfdf65e-14dc-47e1-8092-8d4b13ee92b9', '1a5629e9-6b64-4289-8767-c9ffb93bdf30']
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 'ff3f5027-c630-4ed1-b812-19e21d688922']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.00137036260885831, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.0, Reason: The event text mentions password reset links erroring out for several users, which relates to authentication issues. Cluster A's summary states that login errors are increasing in the authentication service, indicating a broader issue with authentication that could include password reset problems. Cluster B's summary focuses on users still unable to sign in due to auth failures, but the specific mention of password reset links in the event text aligns more closely with Cluster A's description of increasing login errors in authentication.
 --- JUDGE INPUT ---
 Event: Users report reset links failing during password recovery
-Candidates: ['f980de52-b18e-4217-941a-27095be25eb1', '1a5629e9-6b64-4289-8767-c9ffb93bdf30']
+Candidates: ['ff3f5027-c630-4ed1-b812-19e21d688922', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9875610351525956, Reason: Top reranked candidate exceeds the join threshold.
+Decision: none, Confidence: 0.005152554416932168, Reason: No reranked candidate exceeded the join threshold.
 --- JUDGE INPUT ---
 Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['31a54601-304a-4d72-a50d-56c74b0f41fd', '06e1d4c4-6cc1-4f38-8b0d-0568c891bb10']
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', 'ff3f5027-c630-4ed1-b812-19e21d688922']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9713335453466073, Reason: Top reranked candidate exceeds the join threshold.
+Decision: none, Confidence: 0.0, Reason: The event text describes a checkout payment issue with gateway 502 responses, which is related to payment processing. Cluster A's summary mentions checkout payments timing out for card payments, which is a different issue (timing out vs. gateway 501 responses). Cluster B's summary is about authentication login issues, which is unrelated to payment processing. The event does not match either cluster's focus area.
 --- JUDGE INPUT ---
 Event: Login errors are spiking in the auth service
 Candidates: []
@@ -60,54 +60,54 @@ Candidates: []
 Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
 --- JUDGE INPUT ---
 Event: Authentication failures are rising fast for sign in
-Candidates: ['954164d3-4a18-4645-9944-e10ede837ed5']
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.3239732004993976e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.0, Reason: The event text 'Authentication failures are rising fast for sign in' directly matches the cluster A summary 'Login errors are increasing in the authentication service.' Both phrases describe an increase in authentication-related errors, with 'rising fast' aligning with 'increasing' and 'sign in' corresponding to 'login'. The cluster B is unavailable, so it cannot be considered.
 --- JUDGE INPUT ---
 Event: Checkout service is timing out for card payments
-Candidates: ['eedb49e0-f54b-43b0-8e65-c1a2d8b4e14e', '954164d3-4a18-4645-9944-e10ede837ed5']
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.1591037462477027e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: none, Confidence: 0.0, Reason: The event describes checkout service timing out for card payments, while Cluster A's summary mentions increasing login errors in the authentication service. These are distinct issues with different services (checkout vs. authentication) and different problems (payment timeouts vs. login errors). There is no overlap in the problem areas or services described, so the event does not belong to Cluster A.
 --- JUDGE INPUT ---
 Event: Card payment flow keeps timing out in checkout
-Candidates: ['d8376fe5-b437-41c6-a0d8-01de3ffb6872', 'eedb49e0-f54b-43b0-8e65-c1a2d8b4e14e']
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '29c0922f-06ed-4e8c-88f4-66d9ccb76785']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9964893742399832, Reason: Top reranked candidate exceeds the join threshold.
+Decision: none, Confidence: 0.4546753066940398, Reason: No reranked candidate exceeded the join threshold.
 --- JUDGE INPUT ---
 Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['954164d3-4a18-4645-9944-e10ede837ed5', 'eedb49e0-f54b-43b0-8e65-c1a2d8b4e14e']
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '29c0922f-06ed-4e8c-88f4-66d9ccb76785']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.1778014727931151e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: none, Confidence: 0.0, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard. Cluster A is about checkout service timeouts during card payments, and Cluster B is about login errors increasing in the authentication service. Neither cluster's summary relates to dashboard design, chart palettes, or sales visualization. The event does not describe any technical issues that would align with the problems in either cluster. The gate scores are also not relevant for this decision since they are not used for classification.
 --- JUDGE INPUT ---
 Event: Users still cannot sign in because auth failures continue
-Candidates: ['eedb49e0-f54b-43b0-8e65-c1a2d8b4e14e', '954164d3-4a18-4645-9944-e10ede837ed5']
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785', '96d0ff4a-eae3-447c-8482-1637fd60175c']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9021300318373171, Reason: Top reranked candidate exceeds the join threshold.
+Decision: none, Confidence: 0.0, Reason: The event text mentions users still cannot sign in due to authentication failures, which is unrelated to the weekly sales dashboard update described in Cluster B. Cluster A's summary talks about login errors increasing in the authentication service, which seems related to the event. However, the Gate1 score for Cluster A is 0:25, which is low, and Gate2 is 0, indicating a weak match. Since the event is about authentication failures and Cluster A's summary is about login errors in authentication, there is a potential match, but the low scores suggest it's not a strong fit. Given the instructions to base the decision solely on the event text and cluster summaries, and not using scores, the event does not clearly belong to Cluster A as the summary is about login errors increasing, while the event states users still cannot sign in due to auth failures continuing. The event is more about ongoing issues rather than increasing errors, and the context of the cluster summary might not fully align with the event's description. Therefore, the decision is 'none' with low confidence.
 --- JUDGE INPUT ---
 Event: Gateway returns 502 during checkout payment requests
-Candidates: ['d8376fe5-b437-41c6-a0d8-01de3ffb6872', 'eedb49e0-f54b-43b0-8e65-c1a2d8b4e14e']
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '04b6c081-06c9-414c-9a55-b4e26ddcc6dc']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.008162121809426957, Reason: No reranked candidate exceeded the join threshold.
+Decision: both, Confidence: 0.0, Reason: The event 'Gateway returns 502 during checkout payment requests' directly relates to checkout payment issues where the gateway returns a 502 error (a server error), which aligns with both cluster summaries. Cluster A mentions 'Checkout service timeouts during card payments' and Cluster B states 'Card payment processing times out during checkout'. Both clusters describe payment timeouts during checkout, and the 50:2 error indicates a server-side timeout or failure, which fits the context of timeouts. The Gate1 scores are close (0.0716 vs 0.1432), but the decision should be based on semantic similarity, not scores. The event text matches the core issue described in both clusters.
 --- JUDGE INPUT ---
 Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['438c707d-3f26-472f-824a-201d45952e9c', 'd8376fe5-b437-41c6-a0d8-01de3ffb6872']
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '29c0922f-06ed-4e8c-88f4-66d9ccb76785']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9956490703992338, Reason: Top reranked candidate exceeds the join threshold.
+Decision: cluster_a, Confidence: 0.0, Reason: The event describes payment requests failing with 502 errors in the checkout gateway, which directly relates to checkout service timeouts during card payments as summarized in Cluster A. Cluster B focuses on login errors in the authentication service, which is unrelated to payment processing.
 --- JUDGE INPUT ---
 Event: Password reset links are erroring out for several users
-Candidates: ['954164d3-4a18-4645-9944-e10ede837ed5', 'eedb49e0-f54b-43b0-8e65-c1a2d8b4e14e']
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785', '8f49a8a3-bdb3-427d-8963-5e5c0d74a50d']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.00137036260885831, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.0, Reason: The event text mentions password reset links erroring out for several users, which relates to authentication issues. Cluster A's summary states that login errors are increasing in the authentication service, indicating a broader issue with authentication that could include password reset problems. Cluster B's summary focuses on users still unable to sign in due to auth failures, but the event specifically mentions password reset links, which is more aligned with Cluster A's description of increasing login errors in the authentication service.
 --- JUDGE INPUT ---
 Event: Users report reset links failing during password recovery
-Candidates: ['5609e1eb-7522-4457-a716-f5371bbb993a', 'eedb49e0-f54b-43b0-8e65-c1a2d8b4e14e']
+Candidates: ['8f49a8a3-bdb3-427d-8963-5e5c0d74a50d', '29c0922f-06ed-4e8c-88f4-66d9ccb76785']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9875610351525956, Reason: Top reranked candidate exceeds the join threshold.
+Decision: cluster_b, Confidence: 0.0, Reason: The event describes users reporting reset links failing during password recovery, which is a specific type of authentication failure. Cluster B's summary mentions 'Login errors are increasing in the authentication service', which directly relates to authentication issues. Cluster A's summary focuses on users still unable to sign in due to auth failures, but the event specifically mentions password reset links failing, which is a more precise authentication issue than the general auth failures described in Cluster A. The Gate1 score for Cluster B (0.1076) is higher than Cluster A's (0.0626), indicating a stronger match, though the scores are not the primary reference for this decision.
 --- JUDGE INPUT ---
 Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['438c707d-3f26-472f-824a-201d45952e9c', 'd8376fe5-b437-41c6-a0d8-01de3ffb6872']
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '8f49a8a3-bdb3-427d-8963-5e5c0d74a50d']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9713335453466073, Reason: Top reranked candidate exceeds the join threshold.
+Decision: none, Confidence: 0.0, Reason: The event describes a checkout payment issue with gateway 502 responses, which is unrelated to the auth-login problems described in Cluster B. Cluster A mentions checkout service timeouts during card payments, but the event specifies 'gateway 502 responses' which is a specific error type not covered by the general timeout description in Cluster A. The Gate scores are very low for both clusters, but the event text does not align with either cluster's focus.
 --- JUDGE INPUT ---
 Event: Login errors are spiking in the auth service
 Candidates: []
@@ -115,54 +115,54 @@ Candidates: []
 Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
 --- JUDGE INPUT ---
 Event: Authentication failures are rising fast for sign in
-Candidates: ['9d80ed8b-5c54-46a9-acc1-4b0335a9e2d3']
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.3239732004993976e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.85, Reason: The event 'Authentication failures are rising fast for sign in' directly matches Cluster A's summary 'Login errors are increasing in the authentication service.' Both terms 'authentication failures' and 'login errors' indicate similar issues, and 'rising fast' aligns with 'increasing.' The Gate1 and Gate2 scores for Cluster A (0.1333 and 0.0580) suggest a strong match, while Cluster B is unavailable.
 --- JUDGE INPUT ---
 Event: Checkout service is timing out for card payments
-Candidates: ['63406a19-9f3f-4896-a869-36f95736ea8e', '9d80ed8b-5c54-46a9-acc1-4b0335a9e2d3']
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.1591037462477027e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: none, Confidence: 0.95, Reason: The event 'Checkout service is timing out for card payments' does not relate to the Cluster A summary about increasing login errors in the authentication service. Cluster B is unavailable, so the decision is based solely on the absence of relevance to Cluster A.
 --- JUDGE INPUT ---
 Event: Card payment flow keeps timing out in checkout
-Candidates: ['7e3d2a93-5d0e-4a5e-a143-e7f47db23d55', '63406a19-9f3f-4896-a869-36f95736ea8e']
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '0ede13c5-f524-44b7-aeb5-f191a3113151']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9964893742399832, Reason: Top reranked candidate exceeds the join threshold.
+Decision: cluster_a, Confidence: 0.99, Reason: The event 'Card payment flow keeps timing out in checkout' matches Cluster A's summary about checkout payments timing out. Cluster A has high Gate2 score (0.9965) indicating strong relevance, while Cluster B is about login errors with very low scores (0.1174 and 0.0000), so it's not relevant.
 --- JUDGE INPUT ---
 Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['9d80ed8b-5c54-46a9-acc1-4b0335a9e2d3', '63406a19-9f3f-4896-a869-36f95736ea8e']
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151', 'd7338aa9-99a3-4789-8ea5-bfaa2e058a2b']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 1.1778014727931151e-05, Reason: No reranked candidate exceeded the join threshold.
+Decision: none, Confidence: 0.95, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard. Cluster A is about login errors increasing in the authentication service, and Cluster B is about checkout service timing out for card payments. Neither cluster addresses dashboard design or visual presentation issues, so the event does not belong to either cluster.
 --- JUDGE INPUT ---
 Event: Users still cannot sign in because auth failures continue
-Candidates: ['63406a19-9f3f-4896-a869-36f95736ea8e', '9d80ed8b-5c54-46a9-acc1-4b0335a9e2d3']
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151', '50de725e-a962-4f7b-bfab-ac48c5f2db2a']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9021300318373171, Reason: Top reranked candidate exceeds the join threshold.
+Decision: none, Confidence: 0.95, Reason: The event 'Users still cannot sign in because auth failures continue' describes authentication issues, while Cluster A mentions login errors in the authentication service (which is related), but the Gate1 and Gate2 scores for Cluster A are low (0.25 and 0.00), indicating weak association. Cluster B is about a sales dashboard update and is completely unrelated. The event does not strongly align with either cluster's focus, especially given the low scores for Cluster A.
 --- JUDGE INPUT ---
 Event: Gateway returns 502 during checkout payment requests
-Candidates: ['7e3d2a93-5d0e-4a5e-a143-e7f47db23d55', '63406a19-9f3f-4896-a869-36f95736ea8e']
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '0ede13c5-f524-44b7-aeb5-f191a3113151']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.008162121809426957, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.95, Reason: The event 'Gateway returns 502 during checkout payment requests' directly relates to checkout payments timing out (Cluster A Summary), which matches the context of the event. Cluster A has higher Gate1 and Gate2 scores (0.1316 and 0.0082) compared to Cluster B (0.0589 and 0.0000), indicating stronger relevance. The 502 error typically indicates a gateway timeout, aligning with Cluster A's description of checkout service timing out for card payments.
 --- JUDGE INPUT ---
 Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['0d181e2e-ef73-4776-87a6-e7121263162c', '7e3d2a93-5d0e-4a5e-a143-e7f47db23d55']
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '0ede13c5-f524-44b7-aeb5-f191a3113151']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9956490703992338, Reason: Top reranked candidate exceeds the join threshold.
+Decision: cluster_a, Confidence: 0.95, Reason: The event 'Payment requests fail with 502 errors in checkout gateway' directly relates to Cluster A's summary about checkout payments timing out. The 502 errors indicate a gateway issue, which aligns with checkout service timeouts. Cluster B deals with login errors, which is unrelated to payment gateways.
 --- JUDGE INPUT ---
 Event: Password reset links are erroring out for several users
-Candidates: ['9d80ed8b-5c54-46a9-acc1-4b0335a9e2d3', '63406a19-9f3f-4896-a869-36f95736ea8e']
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151', '97f74464-c418-4a33-add7-92bc17dd1836']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.00137036260885831, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.85, Reason: The event 'Password reset links are erroring out for several users' relates to login authentication issues, which aligns with Cluster A's summary about increasing login errors in the authentication service. Cluster A has higher gate scores (0.1531 vs 0.0556) indicating stronger relevance. Cluster B's summary mentions users still unable to sign in due to auth failures, but the event specifically describes password reset errors, which is more closely tied to Cluster A's focus on increasing login errors.
 --- JUDGE INPUT ---
 Event: Users report reset links failing during password recovery
-Candidates: ['dc7e0dc3-c125-438e-b611-4980a3dc4ba3', '63406a19-9f3f-4896-a869-36f95736ea8e']
+Candidates: ['97f74464-c418-4a33-add7-92bc17dd1836', '0ede13c5-f524-44b7-aeb5-f191a3113151']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9875610351525956, Reason: Top reranked candidate exceeds the join threshold.
+Decision: cluster_a, Confidence: 0.85, Reason: The event 'Users report reset links failing during password recovery' aligns with Cluster A's summary about auth-login issues and ongoing auth failures. Cluster A has a higher Gate1 score (0.0626) compared to Cluster B's (0.1076), indicating stronger relevance. The reset link failure is a specific auth failure scenario that fits Cluster A's context of users still unable to sign in due to auth issues.
 --- JUDGE INPUT ---
 Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['0d181e2e-ef73-4776-87a6-e7121263162c', '7e3d2a93-5d0e-4a5e-a143-e7f47db23d55']
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '97f74464-c418-4a33-add7-92bc17dd1836']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.9713335453466073, Reason: Top reranked candidate exceeds the join threshold.
+Decision: none, Confidence: 0.95, Reason: The event 'Checkout payment issue still reproduces with gateway 502 responses' relates to checkout payment issues, while Cluster A deals with checkout timeouts and Cluster B deals with auth login failures. There is no overlap in the problem areas, so the event does not belong to either cluster.
 --- JUDGE INPUT ---
 Event: Login errors are spiking in the auth service
 Candidates: []
@@ -170,331 +170,361 @@ Candidates: []
 Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
 --- JUDGE INPUT ---
 Event: Authentication failures are rising fast for sign in
-Candidates: ['476624d7-5d75-49ba-bd68-2f35a34f36c2']
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Authentication failures are rising fast for sign in' directly matches Cluster A's summary 'Login errors are increasing in the authentication service.' Both terms 'authentication failures' and 'login errors' indicate similar issues, and 'rising fast' aligns with 'increasing.' The Gate1 score of 0.1333 and Gate2 score of 0.0580 suggest a moderate match, but the semantic similarity is strong enough for high confidence in cluster_a.
+Decision: cluster_a, Confidence: 0.85, Reason: The event text 'Authentication failures are rising fast for sign in' directly matches Cluster A's summary 'Login errors are increasing in the authentication service.' Both terms 'authentication failures' and 'login errors' indicate similar issues, and 'rising fast' aligns with 'increasing'. The Gate2 score of 0.0580 for Cluster A is low but consistent with the event description. Cluster B is unavailable, so the decision is based solely on Cluster A.
 --- JUDGE INPUT ---
 Event: Checkout service is timing out for card payments
-Candidates: ['476624d7-5d75-49ba-bd68-2f35a34f36c2']
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout service is timing out for card payments' does not relate to the cluster A's summary about login errors in the authentication service. Cluster B is unavailable, so the decision is based solely on the absence of relevance to cluster A.
+Decision: none, Confidence: 0.95, Reason: The event 'Checkout service is timing out for card payments' does not relate to the cluster A summary about 'Login errors are increasing in the authentication service'. The Gate2 score for cluster A is 0.0000, indicating no match. Cluster B is unavailable, so the event does not belong to any cluster.
 --- JUDGE INPUT ---
 Event: Card payment flow keeps timing out in checkout
-Candidates: ['44c5c7d4-192e-4b6f-a962-fe519775084e', '476624d7-5d75-49ba-bd68-2f35a34f36c2']
+Candidates: ['f97978c8-d011-49fb-a399-fa816517ba11', 'cad100a7-8e44-4c2f-815a-39b8ca61e651']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.8, Reason: The event 'Card payment flow keeps timing out in checkout' directly matches Cluster A's summary 'Checkout service timeouts during card payments'. Both describe checkout issues with card payments timing out. Cluster B is about login errors in authentication, which is unrelated to the event.
+Decision: cluster_a, Confidence: 0.9, Reason: The event 'Card payment flow keeps timing out in checkout' directly matches Cluster A's summary 'Checkout service timeouts during card payments'. Both describe checkout issues with card payments timing out. Cluster B is about login errors in authentication, which is unrelated to the event.
 --- JUDGE INPUT ---
 Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['44c5c7d4-192e-4b6f-a962-fe519775084e', '476624d7-5d75-49ba-bd68-2f35a34f36c2']
+Candidates: ['f97978c8-d011-49fb-a399-fa816517ba11', 'cad100a7-8e44-4c2f-815a-39b8ca61e651']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of sales data. Cluster A deals with checkout service timeouts during card payments, which is a different issue (payment processing). Cluster B deals with login errors in the authentication service, which is also unrelated to the sales dashboard. Neither cluster's summary or gate scores indicate any connection to the event.
+Decision: none, Confidence: 0.95, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard. Cluster A deals with checkout service timeouts during card payments, and Cluster B deals with increasing login errors in the authentication service. Neither cluster's summary relates to dashboard design, chart palettes, or sales visualization. The Gate2 scores for both clusters are 0.0000, indicating no strong association with the event. Therefore, the event does not belong to either cluster.
 --- JUDGE INPUT ---
 Event: Users still cannot sign in because auth failures continue
-Candidates: ['476624d7-5d75-49ba-bd68-2f35a34f36c2', '381f5508-71b0-4dbf-b2a6-157c58627af4']
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651', '9bf8991a-e3cd-4fec-9bf8-915f701a4914']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.99, Reason: The event 'Users still cannot sign in because auth failures continue' relates to authentication service issues, while Cluster A mentions login errors increasing in the authentication service (which is relevant), but the Gate1 and Gate2 scores for Cluster A are 0.25 and 0.00, indicating low confidence. Cluster B is about a dashboard update with no relevance to authentication issues. The event does not clearly align with either cluster's focus, especially given the low scores and the specific nature of Cluster B's incident.
+Decision: none, Confidence: 0.95, Reason: The event text mentions login errors and authentication failures, which does not match Cluster A's summary about increasing login errors in the authentication service (Cluster A has a Gate2 score of 0.0000, indicating no match), and Cluster B is about a dashboard update with no relation to login issues (Gate2 score 0.00: 0.0000). The event does not align with either cluster's focus.
 --- JUDGE INPUT ---
 Event: Gateway returns 502 during checkout payment requests
-Candidates: ['44c5c7d4-192e-4b6f-a962-fe519775084e', '476624d7-5d75-49ba-bd68-2f35a34f36c2']
+Candidates: ['f97978c8-d011-49fb-a399-fa816517ba11', 'cad100a7-8e44-4c2f-815a-39b8ca61e651']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Gateway returns 502 during checkout payment requests' directly relates to checkout service timeouts during card payments as described in Cluster A's summary. Cluster A's Gate1 score (0.1316) is significantly higher than Cluster B's Gate1 score (0.0589), indicating stronger relevance. The 502 Gateway error typically indicates a backend service issue, which aligns with checkout service timeouts in Cluster A. Cluster B focuses on login errors, which is unrelated to payment requests.
+Decision: none, Confidence: 0.95, Reason: The event 'Gateway returns 502 during checkout payment requests' describes a gateway timeout issue during checkout payments. Cluster A is about checkout service timeouts during card payments, which is related but the Gate2 score for Cluster A is very low (0.0207) and Cluster B is about login errors in authentication service, which is unrelated. The event does not match either cluster's focus with sufficient confidence given the low Gate2 scores.
 --- JUDGE INPUT ---
 Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['44c5c7d4-192e-4b6f-a962-fe519775084e', '7a4623d4-3330-4957-b351-34ae362ca88a']
+Candidates: ['02d10886-e27c-4c6d-b9a8-7275b10c20cc', 'f97978c8-d011-49fb-a399-fa816517ba11']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.95, Reason: The event 'Payment requests fail with 502 errors in checkout gateway' directly relates to checkout service timeouts during card payments as described in Cluster A's summary. Cluster A's Gate1 score (0.3348) is significantly higher than Cluster B's Gate1 score (0.0588), indicating a stronger match. The 502 errors typically indicate gateway timeouts, aligning with Cluster A's focus on checkout service timeouts.
+Decision: cluster_a, Confidence: 0.9995, Reason: The event text 'Payment requests fail with 502 errors in checkout gateway' matches Cluster A's summary 'Gateway returns 502 errors during checkout payment processing' exactly. Cluster A has a high Gate2 score of 0.9995, indicating strong alignment. Cluster B has a very low Gate2 score of 0.0020, indicating no alignment.
 --- JUDGE INPUT ---
 Event: Password reset links are erroring out for several users
-Candidates: ['476624d7-5d75-49ba-bd68-2f35a34f36c2', '7a4623d4-3330-4957-b351-34ae362ca88a']
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651', 'fffb5cc8-a2bd-4b32-87ca-a9e56e4de92a']
 --- JUDGE OUTPUT ---
-Decision: both, Confidence: 0.85, Reason: The event 'Password reset links are erroring out for several users' aligns with both clusters. Cluster A focuses on increasing login errors in authentication, and Cluster B describes persistent authentication failures. Password reset errors are a specific type of authentication failure that would fall under both increasing login errors and persistent authentication issues.
+Decision: both, Confidence: 0.95, Reason: The event 'Password reset links are erroring out for several users' aligns with both clusters. Cluster A mentions increasing login errors in authentication, and Cluster B describes persistent authentication failures preventing login. Both clusters focus on authentication issues, and the event describes a specific symptom (password reset errors) that falls under these broader authentication problems. The Gate2 scores are low but consistent across clusters, indicating a strong thematic match.
 --- JUDGE INPUT ---
 Event: Users report reset links failing during password recovery
-Candidates: ['476624d7-5d75-49ba-bd68-2f35a34f36c2', '381f5508-71b0-4dbf-b2a6-157c58627af4']
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651', '02d10886-e27c-4c6d-b9a8-7275b10c20cc']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.99, Reason: The event 'Users report reset links failing during password recovery' does not relate to Cluster A's login errors or Cluster B's dashboard update. Cluster A involves authentication service issues, while Cluster B is about dashboard visual changes. The event describes password reset failures, which is unrelated to both clusters.
+Decision: none, Confidence: 0.95, Reason: The event describes password recovery reset links failing, which is unrelated to Cluster A's authentication service login errors or Cluster B's checkout payment processing 502 errors. The Gate2 scores are extremely low for both clusters, indicating minimal relevance.
 --- JUDGE INPUT ---
 Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['44c5c7d4-192e-4b6f-a962-fe519775084e', '476624d7-5d75-49ba-bd68-2f35a34f36c2']
+Candidates: ['02d10886-e27c-4c6d-b9a8-7275b10c20cc', 'f97978c8-d011-49fb-a399-fa816517ba11']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout payment issue still reproduces with gateway 502 responses' relates to checkout payment issues, which is different from Cluster A's checkout service timeouts during card payments (similar but not identical) and Cluster B's login errors in authentication service. The Gate1 scores for both clusters are very low (0.3425 and 0.0173), indicating low relevance. The event does not match the specific context of either cluster.
+Decision: cluster_a, Confidence: 0.991, Reason: The event text 'Checkout payment issue still reproduces with gateway 502 responses' directly matches Cluster A's summary 'Gateway returns 50:2 errors during checkout payment processing.' Both mention 502 errors in the gateway during checkout payment processing. Cluster B's summary is about timeouts during card payments, which does not match the event text.
 --- JUDGE INPUT ---
-Event: Login errors are spiking in the auth service
+Event: Authentication failures are rising in us-east-1 for contoso accounts
 Candidates: []
 --- JUDGE OUTPUT ---
 Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
 --- JUDGE INPUT ---
-Event: Authentication failures are rising fast for sign in
-Candidates: ['80afe210-505a-4fb2-b1c0-e7313d386ec9']
+Event: contoso cannot sign in because search-api returns 401
+Candidates: ['76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Authentication failures are rising fast for sign in' directly matches Cluster A's summary 'Login errors are increasing in the authentication service'. Both terms 'authentication failures' and 'login errors' refer to similar issues, and 'rising fast' aligns with 'increasing'. Cluster A has a Gate1 score of 0.1333 and Gate2 score of 0.0580, indicating a moderate to high relevance. Cluster B is unavailable, so the decision is based solely on Cluster A.
+Decision: none, Confidence: 0.95, Reason: The event text mentions 'contoso cannot sign in because search-api returns 401'. This indicates an authentication issue with the search-api returning a 401 error. Cluster A's summary describes 'Rising authentication failures in us-east-1 for contoso accounts', which focuses on authentication failures in us-east-1. However, the event specifically mentions the search-api returning 401, which is a more specific technical detail not covered by Cluster A's summary. Additionally, Cluster B is unavailable, so the decision must be based solely on Cluster A. The Gate2 score for Cluster A is very low (0.0054), indicating low confidence in the cluster matching the event. Therefore, the event does not belong to Cluster A, and since Cluster B is unavailable, the decision is 'none'.
 --- JUDGE INPUT ---
-Event: Checkout service is timing out for card payments
-Candidates: ['80afe210-505a-4fb2-b1c0-e7313d386ec9']
+Event: Support reports repeated auth failures in us-east-1 for contoso
+Candidates: ['76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout service is timing out for card payments' does not relate to the Cluster A summary about login errors in the authentication service. Cluster B is unavailable, so no clustering can be done.
+Decision: cluster_a, Confidence: 0.98, Reason: The event mentions repeated auth failures in us-east-1 for contoso, which matches Cluster A's summary of rising authentication failures in us-east-1 for contoso accounts. Cluster A has a high Gate2 score (0.9861) indicating strong alignment, while Cluster B has a very low Gate2 score (0.0017) and mentions a specific 401 Unauthorized response from search-api, which is not mentioned in the event text.
 --- JUDGE INPUT ---
-Event: Card payment flow keeps timing out in checkout
-Candidates: ['e0bdcd7f-8c0b-48a5-8716-ee4f706537c0', '80afe210-505a-4fb2-b1c0-e7313d386ec9']
+Event: search-api login flow is broken for contoso with 401
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Card payment flow keeps timing out in checkout' does not match Cluster A's summary about checkout service timeouts during card payments (Cluster A has a Gate1 score of 0.3333 and Gate2 score of 0:4547), but the event is more specific about card payment timing out in checkout, while Cluster B is about login errors in authentication service (Gate1 score 0.1174, Gate2 score 0.0000). The event does not align with either cluster's focus.
+Decision: cluster_a, Confidence: 0.9389, Reason: The event text 'search-api login flow is broken for contoso with 401' matches Cluster A's summary 'Contoso users are unable to sign in due to a 401 Unauthorized response from the search-api during authentication.' Both mention Contoso, 401 Unauthorized responses, and the search-api login flow issues. Cluster B's summary mentions rising authentication failures in us-east-1 for contoso accounts, but the event text does not specify a region (us-east-1) or indicate rising failures, so it does not match as well.
 --- JUDGE INPUT ---
-Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['e0bdcd7f-8c0b-48a5-8716-ee4f706537c0', '80afe210-505a-4fb2-b1c0-e7313d386ec9']
+Event: search-api is throwing 401 during login for contoso
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard, which is unrelated to the checkout service timeouts in Cluster A or login errors in Cluster B. Both clusters deal with backend service issues (checkout and authentication), while the event is a frontend/UI improvement request. The gate scores for Cluster A are 0.0000, indicating no relevance, and Cluster B's Gate1 score is negative (-0.0313), suggesting low relevance. Therefore, the event does not belong to either cluster.
+Decision: cluster_a, Confidence: 0.99, Reason: The event text 'search-api is throwing 401 during login for contoso' directly matches Cluster A's summary which states 'Contoso users are unable to sign in due to a 401 Unauthorized response from the search-api during authentication.' The Gate2 score for Cluster A is 0.9960, indicating high confidence, while Cluster B's Gate2 score is 0.0036, indicating very low confidence. The event specifically mentions the 401 error from the search-api during login for contoso, which aligns perfectly with Cluster A's description.
 --- JUDGE INPUT ---
-Event: Users still cannot sign in because auth failures continue
-Candidates: ['80afe210-505a-4fb2-b1c0-e7313d386ec9', '951b6157-61bd-41b9-8cec-0877d42404ce']
+Event: Login error volume spiked again for contoso on search-api
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Users still cannot sign in because auth failures continue' describes authentication issues, while Cluster A mentions login errors in the authentication service (which is related), but the Gate1 and Gate2 scores for Cluster A are low (0.25 and 0.00), indicating weak association. Cluster B is about a dashboard update with no relevance to authentication issues. The event does not strongly align with either cluster's focus, so the decision is 'none' with high confidence.
+Decision: cluster_a, Confidence: 0.9, Reason: The event 'Login error volume spiked again for contoso on search-api' matches Cluster A's summary about Contoso users unable to sign in due to 401 Unauthorized from search-api during authentication. The Gate2 score for Cluster A (0.2959) is significantly higher than Cluster B's (0.0131), indicating stronger alignment with the event.
 --- JUDGE INPUT ---
-Event: Gateway returns 502 during checkout payment requests
-Candidates: ['e0bdcd7f-8c0b-48a5-8716-ee4f706537c0', '4bc46a4e-6e9d-4d43-bd10-d5b3a0850712']
+Event: contoso users in us-east-1 see login failures on search-api
+Candidates: ['76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
 --- JUDGE OUTPUT ---
-Decision: both, Confidence: 0.95, Reason: The event 'Gateway returns 502 during checkout payment requests' matches both clusters. Cluster A describes 'Checkout service timeouts during card payments' and Cluster B describes 'Card payment processing times out during checkout'. Both summaries indicate payment timeouts during checkout, and the gate scores (Gate1 and Gate2) are consistent with the event description. The high Gate1 scores (0.0716 and 0.1432) indicate strong alignment.
+Decision: cluster_a, Confidence: 0.95, Reason: The event describes contoso users in us-east-1 experiencing login failures on search-api, which aligns with Cluster A's summary of rising authentication failures in us-east-1 for cont: The event mentions login failures on search-api, which is consistent with authentication failures in us-east-1 for contoso accounts. Cluster A has a higher Gate2 score (0.9856) compared to Cluster B (0.8981), indicating stronger alignment with the event. The event text matches Cluster A's focus on authentication failures in us-east-1 for contoso accounts.
 --- JUDGE INPUT ---
-Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['e0bdcd7f-8c0b-48a5-8716-ee4f706537c0', '5d1003a3-0763-4d07-8e3d-139624177f04']
+Event: Sign-in attempts keep failing for contoso on search-api in us-east-1
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.95, Reason: The event 'Payment requests fail with 502 errors in checkout gateway' directly relates to checkout service timeouts during card payments as described in Cluster A's summary. The high Gate1 score (0.3348) for Cluster A indicates strong alignment, while Cluster B's Gate1 score (0.0588) is significantly lower and pertains to authentication failures, which is unrelated to payment gateway issues.
+Decision: cluster_a, Confidence: 0.95, Reason: The event text 'Sign-in attempts keep failing for contoso on search-api in us-east-1' matches Cluster A's summary 'Contoso users are unable to sign in due to a 401 Unauthorized response from the search-api during authentication.' Both mention contoso, search-api, us-east-1, and authentication failures. Cluster B's summary mentions rising authentication failures but does not specify the search-api or 401 Unauthorized response, making it less specific to the event.
 --- JUDGE INPUT ---
-Event: Password reset links are erroring out for several users
-Candidates: ['80afe210-505a-4fb2-b1c0-e7313d386ec9', '5d1003a3-0763-4d07-8e3d-139624177f04']
+Event: fabrikam shoppers cannot complete checkout on adyen
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: both, Confidence: 0.85, Reason: The event 'Password reset links are erroring out for several users' aligns with both clusters. Cluster A focuses on increasing login errors in authentication, and Cluster B describes persistent authentication failures. Password reset errors are a specific type of authentication failure that would fall under both clusters' themes of login issues.
+Decision: none, Confidence: 0.95, Reason: The event 'fabrikam shoppers cannot complete checkout on adyen' does not match the cluster summaries. Cluster A is about Contoso users unable to sign in due to 401 Unauthorized from search-api, and Cluster B is about rising authentication failures in us-east-1 for Contoso accounts. The event mentions Fabrikam shoppers and adyen checkout, which is unrelated to Contoso, search-api, or authentication failures in the described clusters.
 --- JUDGE INPUT ---
-Event: Users report reset links failing during password recovery
-Candidates: ['80afe210-505a-4fb2-b1c0-e7313d386ec9', '951b6157-61bd-41b9-8cec-0877d42404ce']
+Event: fabrikam checkout still fails when payment goes through adyen
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.99, Reason: The event 'Users report reset links failing during password recovery' does not relate to Cluster A's login errors or Cluster B's dashboard update. Cluster A involves authentication service issues, while Cluster B is about dashboard visual changes. The event is about password reset failures, which is unrelated to both clusters.
+Decision: cluster_a, Confidence: 0.99, Reason: The event text 'fabrikam checkout still fails when payment goes through adyen' directly matches Cluster A's summary 'Fabrikam shoppers are unable to complete checkout payments via Adyen.' Both mention Fabrikam, checkout failures, and Adyen payments. Cluster B is about contoso accounts in us-east-1 authentication failures, which is unrelated to the event.
 --- JUDGE INPUT ---
-Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['e0bdcd7f-8c0b-48a5-8716-ee4f706537c0', '80afe210-505a-4fb2-b1c0-e7313d386ec9']
+Event: Card payment requests hit 429 at the adyen edge
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout payment issue still reproduces with gateway 502 responses' relates to checkout payment issues, while Cluster A deals with checkout service timeouts during card payments and Cluster B deals with login errors. The event does not match the summaries of either cluster. Additionally, the Gate1 scores for both clusters are very low (Cluster A: 0.3425, Cluster B: 0.0173), indicating low relevance.
+Decision: none, Confidence: 0.95, Reason: The event describes card payment requests hitting 429 (too many requests) at the Adyen edge, which is a payment gateway issue. Cluster A is about Fabrikam shoppers unable to complete checkout payments via Ad. This is related to payment processing but the specific error (429) and the context (Adyen edge) don't match the Cluster A summary which mentions general checkout payment issues without specifying the 429 error. Cluster B is about Contoso users unable to sign in due to 401 Unauthorized from search-api, which is a completely different issue (authentication vs payment) and has Gate2 score of 0.0000. The event text does not match either cluster's summary or the Gate2 scores indicate low relevance.
 --- JUDGE INPUT ---
-Event: Login errors are spiking in the auth service
-Candidates: []
+Event: adyen payments time out during checkout for fabrikam
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
+Decision: cluster_a, Confidence: 0.9890196047569738, Reason: Top reranked candidate exceeds the join threshold.
 --- JUDGE INPUT ---
-Event: Authentication failures are rising fast for sign in
-Candidates: ['65997057-f56f-405e-87ae-31130e8bbacc']
+Event: adyen payment authorization is stalling in sa-east-1
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Authentication failures are rising fast for sign in' directly matches Cluster A's summary 'Login errors are increasing in the authentication service'. Both terms 'authentication failures' and 'login errors' refer to similar issues, and 'rising fast' aligns with 'increasing'. Cluster A has a Gate1 Score of 0.1333 and Gate2 Score of 0.0580, indicating a moderate to high relevance. Cluster B is unavailable, so the decision is based solely on Cluster A.
+Decision: cluster_a, Confidence: 0.95, Reason: The event text 'adyen payment authorization is stalling in sa-east-1' directly relates to the Cluster A summary 'Fabrikam shoppers are unable to complete checkout payments via Adyen' as both involve payment authorization issues with Adyen. The Gate2 score for Cluster A (0.1322) is significantly higher than Cluster B's Gate2 score (0.0374), indicating stronger alignment with the event. The event mentions 'stalling' which aligns with 'unable to complete checkout payments', while Cluster B's description of '429 rate limiting' is a specific technical issue that doesn't directly match the general payment stall described in the event.
 --- JUDGE INPUT ---
-Event: Checkout service is timing out for card payments
-Candidates: ['65997057-f56f-405e-87ae-31130e8bbacc']
+Event: 429 responses are coming back from adyen in checkout
+Candidates: ['a2507e63-eb57-4bba-a09a-972e3776dfcc', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout service is timing out for card payments' does not relate to the cluster A's summary about login errors in the authentication service. Cluster B is unavailable, so the decision is based solely on the absence of relevance to cluster A.
+Decision: cluster_a, Confidence: 0.9844, Reason: The event text '429 responses are coming back from adyen in checkout' directly matches Cluster A's summary about 'Adyen edge experienced 429 rate limiting on card payment requests during checkout payments'. The Gate2 score for Cluster A (0.9844) is significantly higher than Cluster B's Gate2 score (0.4815), indicating stronger alignment with the event. The event specifically mentions 429 responses from Adyen during checkout, which aligns precisely with Cluster A's description of rate limiting on card payments.
 --- JUDGE INPUT ---
-Event: Card payment flow keeps timing out in checkout
-Candidates: ['9abf3ec8-242d-46ba-82a4-1ab54426882e', '65997057-f56f-405e-87ae-31130e8bbacc']
+Event: Checkout retries are climbing for fabrikam because adyen is timing out
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.8, Reason: The event 'Card payment flow keeps timing out in checkout' directly matches Cluster A's summary 'Checkout service timeouts during card payments'. Both describe checkout payment timeouts. Cluster B is about login errors in authentication, which is unrelated.
+Decision: cluster_a, Confidence: 0.95, Reason: The event text mentions 'checkout retries are climbing for fabrik: adyen is timing out', which directly relates to the cluster A summary that states 'Fabrikam shoppers are unable to complete checkout payments via Adyen'. Both describe payment failures due to Adyen timing out during checkout. Cluster B's summary about 429 rate limiting does not match the event's description of timing out, and its Gate2 score is very low (0.0029), indicating it's unlikely to be relevant.
 --- JUDGE INPUT ---
-Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['9abf3ec8-242d-46ba-82a4-1ab54426882e', '65997057-f56f-405e-87ae-31130e8bbacc']
+Event: Checkout with adyen keeps failing in sa-east-1 for fabrikam
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard. Cluster A deals with checkout service timeouts during card payments, and Cluster B deals with increasing login errors in the authentication service. Neither cluster's focus relates to the sales dashboard or visual design changes. The gate scores for Cluster A are 0.0000, indicating no relevance, and Cluster B has a negative gate1 score (-0.0313) and a 0.0000 gate2 score, suggesting low relevance. Therefore, the event does not belong to either cluster.
+Decision: cluster_a, Confidence: 0.98, Reason: The event text 'Checkout with adyen keeps failing in sa-east-1 for fabrik: 1. The event mentions 'checkout with adyen keeps failing', which aligns with Cluster A's summary that 'Fabrikam shoppers are unable to complete checkout payments via Adyen'. 2. Cluster A has a high Gate2 score (0.9865) indicating strong relevance, while Cluster B has a very low Gate2 score (0.0534) indicating minimal relevance. The event text specifically mentions 'fabrikam' which matches Cluster A's focus on Fabrikam shoppers, whereas Cluster B discusses 'Adyen edge experienced 429 rate limiting' which is a different issue (rate limiting vs. checkout failures).
 --- JUDGE INPUT ---
-Event: Users still cannot sign in because auth failures continue
-Candidates: ['65997057-f56f-405e-87ae-31130e8bbacc', '1cf41543-0daa-495b-8ca0-89fa4e6ad96e']
+Event: globex users cannot finish password recovery
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.99, Reason: The event 'Users still cannot sign in because auth failures continue' describes authentication issues, while Cluster A mentions login errors in the authentication service (which is related), but the Gate1 and Gate2 scores for Cluster A are very low (0.25 and 0.00), indicating low confidence in clustering. Cluster B is about a dashboard update with no relevance to authentication issues. The event does not strongly align with either cluster's focus, especially given the low scores for Cluster A and the complete irrelevance of Cluster B.
+Decision: none, Confidence: 0.95, Reason: The event 'globex users cannot finish password recovery' does not match the descriptions of either cluster. Cluster A involves Contoso users with 401 Unauthorized responses during authentication, while Cluster B involves Fabrikam shoppers with payment checkout issues via Adyen. The event text describes a password recovery issue for globex users, which is unrelated to the authentication problems in Cluster A or payment issues in Cluster B.
 --- JUDGE INPUT ---
-Event: Gateway returns 502 during checkout payment requests
-Candidates: ['9abf3ec8-242d-46ba-82a4-1ab54426882e', '65997057-f56f-405e-87ae-31130e8bbacc']
+Event: Password recovery is failing again for globex
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Gateway returns 502 during checkout payment requests' relates to payment processing issues, while Cluster A deals with checkout service timeouts during card payments and Cluster B deals with login errors in authentication. The event does not match the specific context of either cluster, as it focuses on gateway errors during payment requests rather than timeouts or login errors.
+Decision: cluster_a, Confidence: 0.9977, Reason: The event 'Password recovery is failing again for globex' directly matches Cluster A's summary 'Globex users are unable to complete password recovery steps'. The Gate2 score for Cluster A is 0.9977, indicating high confidence, while Cluster B's Gate2 score is 0.0001, indicating no match.
 --- JUDGE INPUT ---
-Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['71d25524-4928-4c37-8de3-8434d5aab16d', '9abf3ec8-242d-46ba-82a4-1ab54426882e']
+Event: Recovery flow returns 500 for globex password resets
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.99, Reason: The event 'Payment requests fail with 502 errors in checkout gateway' matches Cluster A's summary 'Gateway returns 502 errors during checkout payment processing' exactly. Cluster A has high Gate2 score (0.9995) indicating strong similarity, while Cluster B has very low scores (Gate1: 0.1917, Gate2: 0.0020) indicating no meaningful similarity.
+Decision: cluster_a, Confidence: 0.95, Reason: The event text 'Recovery flow returns 500 for globex password resets' directly relates to Globex users being unable to complete password recovery steps as described in Cluster A's summary. The Gate2 score for Cluster A (0.7249) is significantly higher than Cluster B's (0.0000), indicating stronger alignment with the event. Cluster B's summary mentions contoso accounts and us-east-1, which do not match the globex context in the event.
 --- JUDGE INPUT ---
-Event: Password reset links are erroring out for several users
-Candidates: ['65997057-f56f-405e-87ae-31130e8bbacc', 'f0253dd3-90b6-419b-a0ce-73f1437baae5']
+Event: Reset token validation is broken for globex in ap-south-1
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
 --- JUDGE OUTPUT ---
-Decision: both, Confidence: 0.85, Reason: The event 'Password reset links are erroring out for several users' aligns with both clusters. Cluster A focuses on increasing login errors in authentication, and Cluster B on persistent authentication failures. Password reset errors are a specific type of authentication failure that would fall under both clusters' summaries.
+Decision: none, Confidence: 0.95, Reason: The event text mentions 'Reset token validation is broken for globex in ap-south-1', which does not match the cluster summaries. Cluster A is about globex users unable to complete password recovery steps, but the event specifies a reset token validation issue in ap-south-1, not password recovery. Cluster B is about rising authentication failures in us-east-1 for contoso accounts, which is a different region and account name. The Gate2 scores are very low (0.0041 and 0.0001), indicating low relevance. The event does not align with either cluster's focus.
 --- JUDGE INPUT ---
-Event: Users report reset links failing during password recovery
-Candidates: ['65997057-f56f-405e-87ae-31130e8bbacc', '71d25524-4928-4c37-8de3-8434d5aab16d']
+Event: globex reset emails open to an error page in ap-south-1
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '02d3af18-f70c-4810-968e-3c28b6cffa7b']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Users report reset links failing during password recovery' relates to password reset functionality, while Cluster A deals with login errors in authentication service and Cluster B deals with 502 errors during checkout payment processing. There is no overlap in the technical areas or error types between the event and the clusters.
+Decision: cluster_a, Confidence: 0.9813052075423879, Reason: Top reranked candidate exceeds the join threshold.
 --- JUDGE INPUT ---
-Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['71d25524-4928-4c37-8de3-8434d5aab16d', '9abf3ec8-242d-46ba-82a4-1ab54426882e']
+Event: 500 is blocking reset-link opens for globex
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '02d3af18-f70c-4810-968e-3c28b6cffa7b']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.99, Reason: The event 'Checkout payment issue still reproduces with gateway 502 responses' directly matches Cluster A's summary 'Gateway returns 502 errors during checkout payment processing.' Both mention 502 errors in the gateway context during checkout payments. Cluster B's summary is about timeouts during card payments, which does not align with the event's description of 502 responses.
+Decision: cluster_b, Confidence: 0.95, Reason: The event text '500 is blocking reset-link opens for globex' indicates that a 500 error is preventing users from opening the reset-link for password recovery. This aligns with Cluster B's summary that 'Globex users are unable to complete password recovery steps.' The Gate2 score for Cluster B (0.0052) is very low, which suggests the cluster is highly specific and likely relevant. Cluster A's summary mentions a password reset token validation issue in the globex environment within ap-south-1 region, but the event text does not mention a region or token validation specifically. The Gate2 score for Cluster A (0.1207) is higher than Cluster B's, but the event text is more directly related to password recovery steps being blocked, which matches Cluster B's description.
 --- JUDGE INPUT ---
-Event: Login errors are spiking in the auth service
-Candidates: []
+Event: globex support queue is filling with reset-link failures
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '02d3af18-f70c-4810-968e-3c28b6cffa7b']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
+Decision: cluster_a, Confidence: 0.85, Reason: The event mentions 'globex support queue is filling with reset-link failures', which aligns with Cluster A's summary about a password reset token validation issue in the globex environment. The Gate2 score for Cluster A (0.3151) is significantly higher than Cluster B's (0.0209), indicating stronger relevance. Cluster B's summary focuses on users unable to complete password recovery steps, which is less directly related to reset-link failures.
 --- JUDGE INPUT ---
-Event: Authentication failures are rising fast for sign in
-Candidates: ['c617b94f-3664-4ac3-8fe3-c2cc62c5f2c0']
+Event: Password reset links are failing for globex users
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '02d3af18-f70c-4810-968e-3c28b6cffa7b']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Authentication failures are rising fast for sign in' directly matches Cluster A's summary 'Login errors are increasing in the authentication service'. Both terms 'authentication failures' and 'login errors' refer to similar issues, and 'rising fast' aligns with 'increasing'. The Gate1 score of 0.1333 and Gate2 score of 0.0580 indicate a moderate to high likelihood of belonging to Cluster A. Cluster B is unavailable, so it cannot be considered.
+Decision: both, Confidence: 0.95, Reason: The event 'Password reset links are failing for globex users' matches both cluster summaries. Cluster A describes a password reset token validation issue in globex environment in ap-south-1 region, which directly relates to password reset links failing. Cluster B describes globex users unable to complete password recovery steps, which also aligns with password reset links failing. Both clusters have high Gate2 scores (0.9893 and 0.9883), indicating strong relevance.
 --- JUDGE INPUT ---
-Event: Checkout service is timing out for card payments
-Candidates: ['c617b94f-3664-4ac3-8fe3-c2cc62c5f2c0']
+Event: Dashboard paint time jumped and inventory-dashboard loads incomplete
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout service is timing out for card payments' does not relate to the Cluster A summary of 'Login errors are increasing in the authentication service'. The two issues are distinct (checkout service vs. authentication service), and Cluster B is unavailable. There is no overlap in the problem areas or symptoms.
+Decision: cluster_b, Confidence: 0.95, Reason: The event 'Dashboard paint time jumped and inventory-dashboard loads incomplete' relates to dashboard performance issues, which aligns with Cluster B's description of Adyen edge rate limiting during checkout payments. Cluster A involves checkout payment failures via Adyen, which is a different issue. The Gate2 scores for Cluster B are 0.0000, indicating no significant activity, but the event text suggests a payment-related issue that matches Cluster B's focus on rate limiting during checkout payments.
 --- JUDGE INPUT ---
-Event: Card payment flow keeps timing out in checkout
-Candidates: ['8d108729-14eb-44a6-9f70-99d52936d14f', 'c617b94f-3664-4ac3-8fe3-c2cc62c5f2c0']
+Event: initech sees broken inventory-dashboard widgets in eu-west-1
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.8, Reason: The event 'Card payment flow keeps timing out in checkout' directly matches Cluster A's summary 'Checkout service timeouts during card payments'. Both describe checkout issues with card payments timing out. Cluster B is about login errors in authentication, which is unrelated to payment flows.
+Decision: none, Confidence: 0.95, Reason: The event describes broken inventory-dashboard widgets in eu-west-1, which does not match the cluster summaries. Cluster A is about password reset token validation in ap-south-1, and Cluster B is about checkout payment issues with Adyen. There is no overlap in the event description with either cluster's focus.
 --- JUDGE INPUT ---
-Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['8d108729-14eb-44a6-9f70-99d52936d14f', 'c617b94f-3664-4ac3-8fe3-c2cc62c5f2c0']
+Event: inventory-dashboard charts render blank for initech
+Candidates: ['0dd39892-6c3a-4e76-a226-faacbc27b104', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard. Cluster A is related to checkout service timeouts during card payments, and Cluster B is related to login errors in the authentication service. Neither cluster addresses dashboard visualization or sales data presentation, so the event does not belong to either cluster.
+Decision: none, Confidence: 0.95, Reason: The event 'inventory-dashboard charts render blank for initech' does not match Cluster A's summary about 'initech inventory dashboard widgets in the eu-west-1 region are malfunctioning' because the event mentions 'charts render blank' while the cluster summary refers to 'widgets malfunctioning' without specifying the exact symptom. Additionally, Cluster B is about payment issues with Adyen, which is unrelated to inventory dashboards. Both Gate2 scores for Cluster B are near zero, indicating low relevance, and the event does not align with either cluster's focus.
 --- JUDGE INPUT ---
-Event: Users still cannot sign in because auth failures continue
-Candidates: ['c617b94f-3664-4ac3-8fe3-c2cc62c5f2c0', '96cbae96-f8d0-4341-9f3f-e9aac7c07fc3']
+Event: initech still sees the inventory-dashboard UI glitch in eu-west-1
+Candidates: ['0dd39892-6c3a-4e76-a226-faacbc27b104', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Users still cannot sign in because auth failures continue' describes authentication issues, while Cluster A mentions login errors in the authentication service (which is related), but the Gate1 and Gate2 scores for Cluster A are low (0.25 and 0.00), indicating weak association. Cluster B is about a dashboard update with no relevance to authentication issues. The event does not strongly align with either cluster's focus, especially given the low scores for Cluster A and the complete irrelevance of Cluster B.
+Decision: cluster_a, Confidence: 0.99, Reason: The event text mentions 'initech still sees the inventory-dashboard UI glitch in eu-west-1', which directly matches Cluster A's summary that 'The initech inventory dashboard widgets in the eu-west-1 region are malfunctioning'. Both describe the same issue with the inventory dashboard in eu-west-1. Cluster A has a higher Gate2 score (0.9974) compared to Cluster B (0.8706), indicating stronger alignment with the event.
 --- JUDGE INPUT ---
-Event: Gateway returns 502 during checkout payment requests
-Candidates: ['8d108729-14eb-44a6-9f70-99d52936d14f', 'c617b94f-3664-4ac3-8fe3-c2cc62c5f2c0']
+Event: initech reports the inventory-dashboard page is visually broken
+Candidates: ['0dd39892-6c3a-4e76-a226-faacbc27b104', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.95, Reason: The event 'Gateway returns 502 during checkout payment requests' directly relates to checkout service timeouts during card payments as described in Cluster A's summary. Cluster A's Gate1 score (0.1316) is significantly higher than Cluster B's Gate1 score (0.0589), indicating stronger relevance. The 502 error typically indicates a gateway timeout, which aligns with checkout service timeouts in Cluster A.
+Decision: cluster_a, Confidence: 0.9, Reason: The event mentions the inventory-dashboard page being visually broken, which aligns with Cluster A's summary about inventory dashboard widgets malfunctioning in the eu-west-1 region. Cluster A has a higher Gate2 score (0.8924) compared to Cluster B (0.8847), indicating stronger alignment with the event.
 --- JUDGE INPUT ---
-Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['8d108729-14eb-44a6-9f70-99d52936d14f', 'bb647a9d-5a46-4ba1-b853-eeab48a393a5']
+Event: inventory-dashboard keeps loading without data traces for initech
+Candidates: ['ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '0dd39892-6c3a-4e76-a226-faacbc27b104']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.001962266535985033, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.95, Reason: The event text 'inventory-dashboard keeps loading without data traces for initech' matches Cluster A's summary 'Inventory dashboard charts display blank for initech due to a dashboard UI incident' as both describe an inventory dashboard issue with initech showing blank data. Cluster A has a higher Gate2 score (0.8955) compared to Cluster B (0.8334), indicating stronger alignment with the event. The event specifically mentions 'without data traces' which aligns with 'blank' charts in Cluster A.
 --- JUDGE INPUT ---
-Event: Password reset links are erroring out for several users
-Candidates: ['c617b94f-3664-4ac3-8fe3-c2cc62c5f2c0', 'bb647a9d-5a46-4ba1-b853-eeab48a393a5']
+Event: Front-end logs show 502 while rendering inventory-dashboard
+Candidates: ['ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '0dd39892-6c3a-4e76-a226-faacbc27b104']
 --- JUDGE OUTPUT ---
-Decision: both, Confidence: 0.85, Reason: The event 'Password reset links are erroring out for several users' aligns with both clusters. Cluster A focuses on increasing login errors in authentication, and Cluster B on persistent authentication failures. Both clusters describe authentication issues that could be caused by the same underlying problem (e.g., server errors, rate limiting, or configuration issues) leading to password reset failures.
+Decision: cluster_a, Confidence: 0.95, Reason: The event mentions '502 while rendering inventory-dashboard' which directly relates to the cluster A summary that states 'Inventory dashboard charts display blank for initech due to a dashboard UI incident'. Both involve inventory dashboard issues with initech, and the Gate2 score for cluster A (0.0346) is higher than cluster B (0.0065), indicating stronger alignment with the event.
 --- JUDGE INPUT ---
-Event: Users report reset links failing during password recovery
-Candidates: ['c617b94f-3664-4ac3-8fe3-c2cc62c5f2c0', '67b744ee-4438-4b50-9d9d-579dbcd7be17']
+Event: inventory-dashboard visuals are missing labels for initech
+Candidates: ['ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '0dd39892-6c3a-4e76-a226-faacbc27b104']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Users report reset links failing during password recovery' relates to password reset functionality, which is distinct from the authentication service errors in Cluster A and payment gateway issues in Cluster B. Cluster A's summary mentions increasing login errors, but the event describes password reset link failures, which is a different aspect of authentication. Cluster B deals with payment requests and 502 errors in checkout, which is unrelated to password reset. Both gate scores are low, indicating weak matches, but the event does not align with either cluster's focus.
+Decision: cluster_a, Confidence: 0.95, Reason: The event text mentions 'inventory-dashboard visuals are missing labels for initech', which directly matches Cluster A's summary that 'Inventory dashboard charts display blank for initech due to a dashboard UI incident'. Both describe an issue with the inventory dashboard for initech showing blank visuals. Cluster B's summary refers to 'malfunctioning' widgets in the eu-west-1 region, which is not explicitly mentioned in the event text. The Gate2 scores for Cluster A (0.9707) and Cluster B (0.9245) are both high, but Cluster A's description aligns more precisely with the event's specific mention of missing labels for initech.
 --- JUDGE INPUT ---
-Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['67b744ee-4438-4b50-9d9d-579dbcd7be17', '8d108729-14eb-44a6-9f70-99d52936d14f']
+Event: reports-api search path is breaching latency SLOs for umbrella
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '0dd39892-6c3a-4e76-a226-faacbc27b104']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.95, Reason: The event 'Checkout payment issue still reproduces with gateway 502 responses' matches Cluster A's summary of 'Payment requests fail with 502 errors during checkout gateway processing'. Both mention 502 errors in the checkout gateway context. Cluster A has higher Gate1 and Gate2 scores (0.3131 and 0.9885) compared to Cluster B (0.2912 and 0.0007), indicating stronger alignment with the event.
+Decision: none, Confidence: 0.95, Reason: The event text mentions 'reports-api search path is breaching latency SLOs for umbrella', which does not match the descriptions of either cluster. Cluster A is about a password reset token validation issue in globex environment in ap-south-1 region, and Cluster B is about initech inventory dashboard widgets malfunctioning in eu-west-1 region. The event is unrelated to both clusters.
 --- JUDGE INPUT ---
-Event: Login errors are spiking in the auth service
-Candidates: []
+Event: reports-api search queries are returning after 2.8s
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', '0dd39892-6c3a-4e76-a226-faacbc27b104']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
+Decision: none, Confidence: 0.95, Reason: The event text describes reports-api search queries returning after 2.8s, which relates to API latency. Cluster A's summary mentions reports-api search path breaching latency SLOs, but the Gate2 score for Cluster A is 0.5464 (which is above the threshold of 0.5 for Gate2). However, the event text does not mention any specific SLO breach or latency issues that match the cluster's description. Cluster B's summary is about initech inventory dashboard widgets in eu-west-1 region malfunctioning, which is unrelated to the reports-api search queries. The Gate2 score for Cluster B is 0.0000, indicating no relevance. The event does not align with either cluster's focus, so the decision is 'none' with high confidence.
 --- JUDGE INPUT ---
-Event: Login errors are spiking in the auth service
-Candidates: []
+Event: Catalog search remains sluggish in us-east-1 for umbrella
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'a2de3a00-c320-420a-83d7-2b3832eaaf61']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
+Decision: cluster_a, Confidence: 0.95, Reason: The event 'Catalog search remains sluggish in us-east-1 for umbrella' directly relates to the Cluster A summary which mentions 'The reports-api search path is breaching latency SLOs for umbrella'. Both refer to the reports-api search path in umbrella region experiencing latency issues. Cluster B mentions search queries exceeding 2.8 seconds but does not specify the region (us-east-1) or the exact SLO breach context as in Cluster A. The Gate2 scores are very low for both clusters, but Cluster A's Gate2 score (0.0055) is slightly higher than Cluster B's (0.0000), indicating a stronger match with the event text.
 --- JUDGE INPUT ---
-Event: Authentication failures are rising fast for sign in
-Candidates: ['24113ef9-b3ee-4466-ad4e-e86f12bdfee7']
+Event: Search timeouts are rising for umbrella shoppers
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Authentication failures are rising fast for sign in' directly matches Cluster A's summary 'Login errors are increasing in the authentication service.' Both terms 'authentication failures' and 'login errors' indicate similar issues, and 'rising fast' aligns with 'increasing.' Cluster B is unavailable, so the decision is based solely on Cluster A. The Gate1 score of 0.1333 and Gate2 score of 0.0580 suggest a moderate match, but the semantic similarity is strong enough for high confidence.
+Decision: none, Confidence: 0.95, Reason: The event text 'Search timeouts are rising for umbrella shoppers' does not match the descriptions of either cluster. Cluster A is about the reports-api search path breaching latency SLOs for umbrella, which is related to API latency but not specifically about timeouts for shoppers. Cluster B is about payment checkout issues with Adyen, which is unrelated to search timeouts. The Gate2 scores are very low for both clusters, indicating low relevance.
 --- JUDGE INPUT ---
-Event: Checkout service is timing out for card payments
-Candidates: ['24113ef9-b3ee-4466-ad4e-e86f12bdfee7']
+Event: umbrella product search takes too long on reports-api
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'a2de3a00-c320-420a-83d7-2b3832eaaf61']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout service is timing out for card payments' does not relate to the cluster A's summary about login errors in the authentication service. Cluster B is unavailable, so the decision is based solely on the absence of relevance to cluster A.
+Decision: cluster_a, Confidence: 0.95, Reason: The event 'umbrella product search takes too long on reports-api' directly matches Cluster A's summary that 'The reports-api search path is breaching latency SLOs for umbrella'. The Gate2 score for Cluster A (0.9521) is significantly higher than Cluster B's (0.8345), indicating stronger alignment with the event. The event specifically mentions 'umbrella product search' which aligns with Cluster A's focus on 'umbrella' in the context of latency SLOs.
 --- JUDGE INPUT ---
-Event: Card payment flow keeps timing out in checkout
-Candidates: ['cd93a92d-3603-4ba9-88f3-5e2016858e9f', '24113ef9-b3ee-4466-ad4e-e86f12bdfee7']
+Event: Catalog search latency is spiking for umbrella in us-east-1
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', '523ee698-64b8-49ae-b61d-029353188ecf']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Card payment flow keeps timing out in checkout' does not match Cluster A's summary about checkout service timeouts during card payments (which is related but the event is more specific to timing out in checkout) and Cluster B's summary about login errors. The Gate1 and Gate2 scores for both clusters are low, indicating low relevance.
+Decision: cluster_a, Confidence: 0.9, Reason: The event text mentions catalog search latency spiking for umbrella in us-east-1, which directly aligns with Cluster A's summary about reports-api search path breaching latency SLOs for umbrella. Cluster A has a higher Gate2 score (0.8383) compared to Cluster B (0.4798), indicating stronger relevance. The event's focus on latency spiking matches Cluster A's description of breaching latency SLOs, while Cluster B's summary about search timeouts for umbrella shoppers is less directly related to the specific event context.
 --- JUDGE INPUT ---
-Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['cd93a92d-3603-4ba9-88f3-5e2016858e9f', '24113ef9-b3ee-4466-ad4e-e86f12bdfee7']
+Event: umbrella search results are delayed by 2.8s
+Candidates: ['523ee698-64b8-49ae-b61d-029353188ecf', '9ac977dc-e36a-49fa-8c5f-dc8855f72381']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard. Cluster A deals with checkout service timeouts during card payments, and Cluster B deals with increasing login errors in the authentication service. Neither cluster's focus relates to the sales dashboard or visual design changes, so the event does not belong to either cluster.
+Decision: cluster_a, Confidence: 0.85, Reason: The event 'umbrella search results are delayed by 2.8s' aligns with Cluster A's summary about search timeouts increasing for umbrella shoppers due to latency issues. The delay in search results directly relates to latency problems, which matches Cluster A's description. Cluster B's summary focuses on the reports-api search path breaching latency SLOs, which is a more specific technical detail not directly mentioned in the event text. The Gate2 scores for Cluster A (0.2465) and Cluster B (0.1725) also support Cluster A being a better fit, with a higher score indicating stronger relevance.
 --- JUDGE INPUT ---
-Event: Users still cannot sign in because auth failures continue
-Candidates: ['24113ef9-b3ee-4466-ad4e-e86f12bdfee7', '2fb27c9c-6877-4381-841e-de1c486939e8']
+Event: us-east-1 users report very slow catalog search
+Candidates: ['a2de3a00-c320-420a-83d7-2b3832eaaf61', '0dd39892-6c3a-4e76-a226-faacbc27b104']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.99, Reason: The event 'Users still cannot sign in because auth failures continue' describes authentication issues, while Cluster A's summary mentions login errors in the authentication service. However, Cluster A's Gate1 Score is 0.2500 and Gate2 Score is 0.0000, indicating low confidence in clustering. The event does not match Cluster B's dashboard-related issue. Given the low scores and mismatched contexts, the event does not belong to either cluster.
+Decision: none, Confidence: 0.95, Reason: The event describes slow catalog search in us-east-1, while Cluster A involves latency in reports API (not specified region) and Cluster B involves malfunctioning widgets in eu-west-1 region. There is no overlap in the regions or specific services mentioned.
 --- JUDGE INPUT ---
-Event: Gateway returns 502 during checkout payment requests
-Candidates: ['cd93a92d-3603-4ba9-88f3-5e2016858e9f', '95213f84-5f9f-4a6a-b929-23afccaf7992']
+Event: Delayed callbacks from salesforce are blocking order updates
+Candidates: ['a2de3a00-c320-420a-83d7-2b3832eaaf61', '9ac977dc-e36a-49fa-8c5f-dc8855f72381']
 --- JUDGE OUTPUT ---
-Decision: both, Confidence: 0.95, Reason: The event 'Gateway returns 502 during checkout payment requests' matches both clusters. Cluster A describes 'Checkout service timeouts during card payments' and Cluster B describes 'Card payment processing times out during checkout'. Both summaries indicate payment timeouts during checkout, and the gate scores (Gate1 and Gate2) are consistent with the event description. The high Gate1 scores (0.0716 and 0.1432) indicate strong alignment with the event.
+Decision: none, Confidence: 0.95, Reason: The event 'Delayed callbacks from salesforce are blocking order updates' does not match the descriptions of either cluster. Cluster A is about search queries in the reports API experiencing latency exceeding 2.8 seconds, and Cluster B is about the reports-api search path breaching latency SLOs for umbrella. The event mentions Salesforce callbacks blocking order updates, which is unrelated to the reports API latency issues described in the clusters.
 --- JUDGE INPUT ---
-Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['cd93a92d-3603-4ba9-88f3-5e2016858e9f', '02c1f306-f0aa-4cb5-95e1-73fcf5538022']
+Event: salesforce webhook backlog is growing for northwind
+Candidates: ['7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.95, Reason: The event 'Payment requests fail with 502 errors in checkout gateway' directly relates to checkout service timeouts during card payments as described in Cluster A's summary. Cluster A's Gate1 score (0.3348) is significantly higher than Cluster B's Gate1 score (0.0588), indicating stronger alignment with Cluster A. The 502 errors typically indicate gateway timeouts, which matches Cluster A's focus on checkout service timeouts during card payments.
+Decision: none, Confidence: 0.95, Reason: The event 'salesforce webhook backlog is growing for northwind' describes a Salesforce webhook backlog issue, which does not match Cluster A's summary about delayed Salesforce callbacks preventing order updates, nor Cluster B's summary about slow catalog search performance in US East 1. The Gate2 scores for both clusters are very low (0.0003 and 0.0000), indicating minimal relevance. The event is specific to Salesforce webhooks and Northwind, while the clusters describe different issues (order processing delays vs. catalog search performance). There is no overlap in the problem domains or symptoms.
 --- JUDGE INPUT ---
-Event: Password reset links are erroring out for several users
-Candidates: ['24113ef9-b3ee-4466-ad4e-e86f12bdfee7', '02c1f306-f0aa-4cb5-95e1-73fcf5538022']
+Event: retry-queue is filling with pending salesforce webhook deliveries
+Candidates: ['42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.015464307856299816, Reason: No reranked candidate exceeded the join threshold.
+Decision: cluster_a, Confidence: 0.95, Reason: The event text 'retry-queue is filling with pending salesforce webhook deliveries' directly relates to a Salesforce webhook backlog increasing for Northwind orders as described in Cluster A. The Gate2 score for Cluster A (0.0414) is significantly higher than Cluster B's Gate2 score (0.0019), indicating stronger alignment with the event. Cluster B's summary mentions 'Salesforce callbacks are delayed', which is less specific to the retry-queue filling issue described in the event.
 --- JUDGE INPUT ---
-Event: Users report reset links failing during password recovery
-Candidates: ['76489215-9e98-41c3-a523-b6a4e8bee54f', '02c1f306-f0aa-4cb5-95e1-73fcf5538022']
+Event: northwind order-state sync is lagging behind because of salesforce
+Candidates: ['42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.99, Reason: The event 'Users report reset links failing during password recovery' directly matches Cluster A's summary 'Password reset links are failing for multiple users'. Cluster A has high Gate2 scores (0.9986) indicating strong alignment, while Cluster B has low scores (0.0626 and 0.2034) indicating minimal relevance. The event specifically mentions password reset links failing, which aligns with Cluster A's focus on password reset failures, not general authentication issues.
+Decision: cluster_a, Confidence: 0.85, Reason: The event mentions 'northwind order-state sync is lagging behind because of salesforce', which directly relates to the cluster A summary 'Salesforce webhook backlog is increasing for Northwind orders'. Both involve Salesforce causing delays in Northwind order processing. Cluster B's summary about 'Salesforce callbacks are delayed' does not match as closely, and its Gate2 score is very low (0.0178), indicating low relevance.
 --- JUDGE INPUT ---
-Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['cd93a92d-3603-4ba9-88f3-5e2016858e9f', '02c1f306-f0aa-4cb5-95e1-73fcf5538022']
+Event: salesforce order webhooks are delayed for northwind
+Candidates: ['42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout payment issue still reproduces with gateway 502 responses' describes a payment gateway issue (502 responses) which is unrelated to authentication failures. Cluster A is about checkout timeouts during card payments, which is related to payment processing but does not specifically mention 50:2 errors. Cluster B is about authentication failures, which is a completely different issue. The Gate1 scores for both clusters are very low (0.3425 and 0.0626), indicating low relevance. The event does not match either cluster's summary or the nature of the issues.
+Decision: cluster_a, Confidence: 0.99, Reason: The event text 'salesforce order webhooks are delayed for northwind' matches Cluster A's summary 'Salesforce webhook backlog is increasing for Northwind orders' closely. Both mention Salesforce webhooks and Northwind orders being delayed. Cluster A has a higher Gate2 score (0.9908) compared to Cluster B (0.9583), indicating stronger alignment with the event.
 --- JUDGE INPUT ---
-Event: Login errors are spiking in the auth service
-Candidates: []
+Event: northwind still has stale order status from salesforce
+Candidates: ['42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.0, Reason: No candidate clusters survived retrieval.
+Decision: cluster_a, Confidence: 0.95, Reason: The event 'northwind still has stale order status from salesforce' directly relates to Salesforce order status issues, which matches Cluster A's summary about 'Salesforce webhook backlog is increasing for Northwind orders'. The Gate2 score for Cluster A (0.8358) is significantly higher than Cluster B's (0.0206), indicating stronger alignment. Cluster B's summary about delayed callbacks does not align with the event's focus on stale order status.
 --- JUDGE INPUT ---
-Event: Authentication failures are rising fast for sign in
-Candidates: ['b5208af7-cb47-4038-a1d2-6d6f014d7a6d']
+Event: northwind fulfillment updates arrive late from salesforce
+Candidates: ['7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '42a193de-c4c2-4bff-aaee-07d73c7e7e63']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Authentication failures are rising fast for sign in' directly matches Cluster A's summary 'Login errors are increasing in the authentication service'. Both phrases describe increasing authentication issues, with 'login errors' being synonymous with 'authentication failures' and 'increasing' aligning with 'rising fast'. Cluster A's gate scores (0.1333 and 0.0580) indicate a moderate to high likelihood of relevance, and Cluster B is unavailable, so the decision is based solely on Cluster A.
+Decision: cluster_a, Confidence: 0.85, Reason: The event text 'northwind fulfillment updates arrive late from salesforce' directly matches Cluster A's summary about 'Salesforce callbacks are delayed, preventing order updates from processing'. The Gate2 score for Cluster A (0.6550) is significantly higher than Cluster B's (0.3315), indicating stronger alignment with the event. The event describes delayed updates from Salesforce, which aligns with delayed callbacks and order processing issues in Cluster A.
 --- JUDGE INPUT ---
-Event: Checkout service is timing out for card payments
-Candidates: ['b5208af7-cb47-4038-a1d2-6d6f014d7a6d']
+Event: Order status callbacks from salesforce are stuck in retry-queue
+Candidates: ['7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '42a193de-c4c2-4bff-aaee-07d73c7e7e63']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout service is timing out for card payments' does not relate to the cluster A's summary about login errors in the authentication service. Cluster B is unavailable, so the decision is based solely on the absence of relevance to cluster A.
+Decision: cluster_a, Confidence: 0.95, Reason: The event 'Order status callbacks from salesforce are stuck in retry-queue' directly matches Cluster A's summary about Salesforce callbacks being delayed, preventing order updates. Cluster B's summary mentions a webhook backlog for Northwind orders, which is not relevant to the event's context of retry-queue issues. The Gate2 scores confirm Cluster A's relevance (0.8963) versus Cluster B's low relevance (0.0116).
 --- JUDGE INPUT ---
-Event: Card payment flow keeps timing out in checkout
-Candidates: ['f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 'b5208af7-cb47-4038-a1d2-6d6f014d7a6d']
+Event: PDF export of invoices is broken in ap-south-1 for contoso
+Candidates: ['6a2755c4-244b-4155-b4c4-53d92f52bdd6', 'a2de3a00-c320-420a-83d7-2b3832eaaf61']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.8, Reason: The event 'Card payment flow keeps timing out in checkout' directly matches Cluster A's summary 'Checkout service timeouts during card payments'. Both describe payment checkout timing issues. Cluster B is about login errors, which is unrelated. The Gate1 scores for Cluster A (0.3333) and Cluster B (0.1174) indicate Cluster A has a higher relevance, and Gate2 scores further support this with Cluster A at 0.4547 vs Cluster B at 0.0000.
+Decision: none, Confidence: 0.95, Reason: The event describes a PDF export issue in ap-south-1 for contoso, which is unrelated to the cluster summaries provided. Cluster A involves slow catalog search performance in US East 1, and Cluster B involves report API latency exceeding 2.8 seconds. Neither cluster summary matches the event's context of PDF export failures in a specific region (ap-south-1) for a specific customer (contoso). The Gate2 scores are 0.0000 for both clusters, indicating no strong association with the event.
 --- JUDGE INPUT ---
-Event: Weekly sales dashboard needs a brighter chart palette
-Candidates: ['f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 'b5208af7-cb47-4038-a1d2-6d6f014d7a6d']
+Event: contoso cannot download invoices in en-GB
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Weekly sales dashboard needs a brighter chart palette' is about improving the visual presentation of a sales dashboard, which is unrelated to the checkout service timeouts in Cluster A or login errors in Cluster B. Both clusters deal with specific technical issues (payment processing and authentication), while the event describes a non-technical, UI-related improvement request. The gate scores for Cluster A are 0.0000, indicating no relevance, and Cluster B has a negative gate score (-0.0313) suggesting low relevance. Therefore, the event does not belong to either cluster.
+Decision: cluster_a, Confidence: 0.9, Reason: The event 'contoso cannot download invoices in en-GB' directly relates to the Cluster A summary which mentions 'PDF export of invoices is broken in ap-south-1 for contoso'. Both involve Contoso and invoice export issues, while Cluster B is about Salesforce callbacks and order updates, which are unrelated.
 --- JUDGE INPUT ---
-Event: Users still cannot sign in because auth failures continue
-Candidates: ['b5208af7-cb47-4038-a1d2-6d6f014d7a6d', '9619cc00-d602-42bf-a09e-d7f7b08a2880']
+Event: Invoice export PDF generation is failing for contoso
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Users still cannot sign in because auth failures continue' describes authentication issues, while Cluster A mentions login errors increasing in the authentication service (which is related), but the Gate1 and Gate2 scores for Cluster A are low (0.25 and 0.00), indicating weak association. Cluster B is about a dashboard update with no relevance to authentication issues. The event does not strongly align with either cluster's focus, especially given the low scores for Cluster A and the complete irrelevance of Cluster B.
+Decision: cluster_a, Confidence: 0.9971, Reason: The event text 'Invoice export PDF generation is failing for contoso' matches the Cluster A summary 'invoice-export-incident-007: PDF export of invoices is broken in ap-south-1 for contoso' which describes a similar issue with invoice PDF export failing for contoso. The Gate2 score for Cluster A is 0.9971, indicating high confidence. Cluster B is unrelated as it deals with Salesforce callbacks and order updates, not invoice PDF generation.
 --- JUDGE INPUT ---
-Event: Gateway returns 502 during checkout payment requests
-Candidates: ['f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 'b5208af7-cb47-4038-a1d2-6d6f014d7a6d']
+Event: contoso support tickets mention broken invoice PDFs
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.95, Reason: The event 'Gateway returns 502 during checkout payment requests' directly relates to checkout service timeouts during card payments as described in Cluster A's summary. Cluster A's Gate1 score (0.1316) is significantly higher than Cluster B's Gate1 score (0.0589), indicating stronger relevance. The 502 Gateway error typically indicates a server-side issue in the gateway service, which aligns with checkout payment request failures. Cluster B focuses on login errors in authentication, which is unrelated to payment processing.
+Decision: cluster_a, Confidence: 0.98, Reason: The event text mentions broken invoice PDFs in contoso support tickets, which directly matches Cluster A's summary about PDF export of invoices being broken in ap-south-1 for contoso. Cluster A has a high Gate2 score of 0.9814, indicating strong relevance. Cluster B is unrelated as it deals with Salesforce callbacks and order updates, not PDF issues.
 --- JUDGE INPUT ---
-Event: Payment requests fail with 502 errors in checkout gateway
-Candidates: ['f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', '14c3b073-4b71-4e63-a926-d31ca4dec138']
+Event: contoso invoice downloads are empty again
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.95, Reason: The event 'Payment requests fail with 502 errors in checkout gateway' directly relates to checkout service timeouts during card payments as described in Cluster A's summary. The high Gate1 score (0.3348) for Cluster A indicates strong alignment, while Cluster B's Gate1 score (0.0588) is significantly lower and its summary focuses on authentication failures, which is unrelated to payment gateway issues.
+Decision: none, Confidence: 0.95, Reason: The event 'contoso invoice downloads are empty again' does not match Cluster A's summary about PDF export of invoices being broken in ap-south-1 for contoso, nor does it relate to Cluster B's summary about Salesforce callbacks being delayed. The Gate2 scores for both clusters are low (0.2581 and 0.0000), indicating low relevance. The event is about invoice downloads being empty, which is distinct from the PDF export issue and Salesforce callback delays.
 --- JUDGE INPUT ---
-Event: Password reset links are erroring out for several users
-Candidates: ['b5208af7-cb47-4038-a1d2-6d6f014d7a6d', '14c3b073-4b71-4e63-a926-d31ca4dec138']
+Event: Invoice export returns 401 for contoso finance users
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', 'be02a54c-fd1b-48c6-adee-9b27a05872f4']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Password reset links are erroring out for several users' aligns with Cluster A's summary about increasing login errors in the authentication service. Cluster A has higher gate scores (0.1531 vs 0.0556) indicating stronger relevance. Password reset errors are a specific type of login error, which fits Cluster A's focus on authentication service issues.
+Decision: cluster_a, Confidence: 0.9223, Reason: The event 'Invoice export returns 401 for contoso finance users' matches Cluster A's summary about PDF export of invoices being broken in ap-south-1 for contoso. The Gate2 score for Cluster A (0.9223) is significantly higher than Cluster B's (0.8521), indicating stronger alignment with the event text.
 --- JUDGE INPUT ---
-Event: Users report reset links failing during password recovery
-Candidates: ['14c3b073-4b71-4e63-a926-d31ca4dec138', 'b5208af7-cb47-4038-a1d2-6d6f014d7a6d']
+Event: en-GB invoice export is malformed for contoso
+Candidates: ['be02a54c-fd1b-48c6-adee-9b27a05872f4', 'ded78f6f-37f6-45a7-9489-01fa50dda040']
 --- JUDGE OUTPUT ---
-Decision: cluster_a, Confidence: 0.85, Reason: The event 'Users report reset links failing during password recovery' aligns with Cluster A's summary of 'Users are experiencing persistent authentication failures preventing login.' This indicates a direct connection to authentication issues. Cluster A has higher Gate1 and Gate2 scores (0.0626 and 0.2034) compared to Cluster B (0.1076 and 0.0008), suggesting stronger relevance. Cluster B's Gate2 score is near zero, indicating low confidence in its relevance to this event.
+Decision: cluster_a, Confidence: 0.95, Reason: The event 'en-GB invoice export is malformed for contoso' matches Cluster A's summary about Contoso's invoice downloads being empty due to an ongoing export incident. The Gate2 score for Cluster A (0.9584) is significantly higher than Cluster B's (0.9380), indicating stronger alignment with the event text.
 --- JUDGE INPUT ---
-Event: Checkout payment issue still reproduces with gateway 502 responses
-Candidates: ['f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', '14c3b073-4b71-4e63-a926-d31ca4dec138']
+Event: Invoice rendering pipeline is timing out for contoso
+Candidates: ['be02a54c-fd1b-48c6-adee-9b27a05872f4', 'ded78f6f-37f6-45a7-9489-01fa50dda040']
 --- JUDGE OUTPUT ---
-Decision: none, Confidence: 0.95, Reason: The event 'Checkout payment issue still reproduces with gateway 502 responses' describes a payment gateway issue (502 responses) which is unrelated to authentication failures. Cluster A is about checkout timeouts during card payments, which is related to payment processing but does not specifically mention 502 gateway errors. Cluster B is about authentication failures, which is a completely different issue. The Gate1 scores for both clusters are very low (Cluster A: 0.3425, Cluster B: 0.0430), indicating low relevance. The event does not match either cluster's summary or the nature of the issues.
+Decision: cluster_a, Confidence: 0.85, Reason: The event 'Invoice rendering pipeline is timing out for contoso' aligns with Cluster A's summary about Contoso's invoice downloads being empty due to an ongoing export incident. The Gate2 score for Cluster A (0.7582) is significantly higher than Cluster B's (0.5518), indicating stronger relevance. The event mentions a timing out issue, which is consistent with an export incident causing empty downloads.
+--- JUDGE INPUT ---
+Event: App version 4.12.0 is unstable in eu-west-1
+Candidates: ['6a2755c4-244b-4155-b4c4-53d92f52bdd6', 'be02a54c-fd1b-48c6-adee-9b27a05872f4']
+--- JUDGE OUTPUT ---
+Decision: none, Confidence: 0.95, Reason: The event mentions 'App version 4.12.0 is unstable in eu-west-1', which refers to a specific region (eu-west-1) and an app version issue. Cluster A's summary is about slow catalog search performance in US East 1, which is a different region (US East 1) and a different issue (search performance). Cluster B's summary is about Contoso's invoice downloads being empty due to an export incident, which is unrelated to the app version instability mentioned in the event. Both clusters have Gate2 scores of 0.0000, indicating no strong evidence of the event belonging to either cluster. The event does not match the descriptions or issues of either cluster.
+--- JUDGE INPUT ---
+Event: fabrikam still sees startup crashes in version 4.12.0
+Candidates: ['ca3680ec-da11-4670-9fc7-b5589be84eb2', 'be02a54c-fd1b-48c6-adee-9b27a05872f4']
+--- JUDGE OUTPUT ---
+Decision: none, Confidence: 0.95, Reason: The event mentions startup crashes in version 4.12.0, but Cluster A's summary refers to instability in eu-west-1 (geographic region), while Cluster B is about Contoso's invoice downloads being empty. The event does not mention any geographic region or invoice downloads, so it doesn't match either cluster.
+--- JUDGE INPUT ---
+Event: 429 appears in mobile crash traces for fabrikam
+Candidates: ['e31d91a5-da8c-419e-9bcb-8cc5c65034ba', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- JUDGE OUTPUT ---
+Decision: cluster_a, Confidence: 0.95, Reason: The event mentions '429 appears in mobile crash traces for fabrikam', which directly relates to the cluster A summary that reports 'startup crashes in version 4.12.0 of the mobile application'. Both involve Fabrik. The Gate2 score for cluster A is 0.8125, indicating strong relevance, while cluster B has a Gate2 score of 0.0000, showing no relevance.
+--- JUDGE INPUT ---
+Event: Crash logs show 429 in app version 4.12.0
+Candidates: ['e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 'ca3680ec-da11-4670-9fc7-b5589be84eb2']
+--- JUDGE OUTPUT ---
+Decision: cluster_a, Confidence: 0.9, Reason: The event mentions 'Crash logs show 429 in app version 4.12.0', which directly matches Cluster A's summary about 'startup crashes in version 4.12.0 of the mobile application'. Cluster A has a higher Gate2 score (0.7964) compared to Cluster B (0.3178), indicating stronger relevance. The event does not mention 'eu-west-1' or instability in that region, so it doesn't align with Cluster B.
+--- JUDGE INPUT ---
+Event: fabrikam users on Android cannot open the app without crashing
+Candidates: ['e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 'ca3680ec-da11-4670-9fc7-b5589be84eb2']
+--- JUDGE OUTPUT ---
+Decision: cluster_a, Confidence: 0.95, Reason: The event describes Fabrik: users on Android cannot open the app without crashing, which matches Cluster A's summary about startup crashes in version 4.12.0. Cluster A has a high Gate2 score (0.9540) indicating strong relevance, while Cluster B has a Gate2 score of 0.0000, indicating no relevance.
+--- JUDGE INPUT ---
+Event: Android app version 4.12.0 crashes for fabrikam users
+Candidates: ['e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 'ca3680ec-da11-4670-9fc7-b5589be84eb2']
+--- JUDGE OUTPUT ---
+Decision: cluster_a, Confidence: 0.99, Reason: The event text mentions Android app version 4.12.0 crashes for fabrikam users, which directly matches Cluster A's summary that Fabrikam reports startup crashes in version 4.12.0 of the mobile application. Cluster A has a Gate2 score of 0.9996, indicating high confidence, while Cluster B's Gate2 score is 0.6488, which is lower and does not match the specific mention of Fabrikam users in the event text.

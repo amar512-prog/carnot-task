@@ -498,3 +498,538 @@ Event: Checkout payment issue still reproduces with gateway 502 responses
 Candidates: ['f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', '14c3b073-4b71-4e63-a926-d31ca4dec138', 'b5208af7-cb47-4038-a1d2-6d6f014d7a6d', '9619cc00-d602-42bf-a09e-d7f7b08a2880']
 --- RERANKER OUTPUT ---
 [('f8a0fb6c-ff8a-4d79-ae54-a7810b42353a', 0.0007438687234013553), ('14c3b073-4b71-4e63-a926-d31ca4dec138', 1.8214631643347912e-05)]
+--- RERANKER INPUT ---
+Event: Login errors are spiking in the auth service
+Candidates: []
+--- RERANKER OUTPUT ---
+[]
+--- RERANKER INPUT ---
+Event: Authentication failures are rising fast for sign in
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
+--- RERANKER OUTPUT ---
+[('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 0.05796272434767455)]
+--- RERANKER INPUT ---
+Event: Checkout service is timing out for card payments
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
+--- RERANKER OUTPUT ---
+[('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 1.3943291428390853e-05)]
+--- RERANKER INPUT ---
+Event: Card payment flow keeps timing out in checkout
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
+--- RERANKER OUTPUT ---
+[('0960d596-362e-49ce-8327-e562166d8868', 0.9964893742399832), ('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 1.163785679778121e-05)]
+--- RERANKER INPUT ---
+Event: Weekly sales dashboard needs a brighter chart palette
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d']
+--- RERANKER OUTPUT ---
+[('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 1.131556112157735e-05), ('0960d596-362e-49ce-8327-e562166d8868', 1.1231412545770423e-05)]
+--- RERANKER INPUT ---
+Event: Users still cannot sign in because auth failures continue
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', '0960d596-362e-49ce-8327-e562166d8868', 'b5db2c85-9608-46c4-b32e-fdc77bd3eabf']
+--- RERANKER OUTPUT ---
+[('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 2.189325566221487e-05), ('b5db2c85-9608-46c4-b32e-fdc77bd3eabf', 1.2414810709006505e-05)]
+--- RERANKER INPUT ---
+Event: Gateway returns 502 during checkout payment requests
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 'b5db2c85-9608-46c4-b32e-fdc77bd3eabf', 'ff3f5027-c630-4ed1-b812-19e21d688922']
+--- RERANKER OUTPUT ---
+[('0960d596-362e-49ce-8327-e562166d8868', 0.008162121809426957), ('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 1.4767641836562332e-05)]
+--- RERANKER INPUT ---
+Event: Payment requests fail with 502 errors in checkout gateway
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 'ff3f5027-c630-4ed1-b812-19e21d688922', 'b5db2c85-9608-46c4-b32e-fdc77bd3eabf']
+--- RERANKER OUTPUT ---
+[('0960d596-362e-49ce-8327-e562166d8868', 0.003027835024568379), ('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 0.00033191436488041537)]
+--- RERANKER INPUT ---
+Event: Password reset links are erroring out for several users
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', '0960d596-362e-49ce-8327-e562166d8868', 'ff3f5027-c630-4ed1-b812-19e21d688922', 'b5db2c85-9608-46c4-b32e-fdc77bd3eabf']
+--- RERANKER OUTPUT ---
+[('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 0.015464307856299816), ('ff3f5027-c630-4ed1-b812-19e21d688922', 0.0001661749977551454)]
+--- RERANKER INPUT ---
+Event: Users report reset links failing during password recovery
+Candidates: ['1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 'ff3f5027-c630-4ed1-b812-19e21d688922', '0960d596-362e-49ce-8327-e562166d8868', 'b5db2c85-9608-46c4-b32e-fdc77bd3eabf']
+--- RERANKER OUTPUT ---
+[('ff3f5027-c630-4ed1-b812-19e21d688922', 0.005152554416932168), ('1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 0.000775225898511629)]
+--- RERANKER INPUT ---
+Event: Checkout payment issue still reproduces with gateway 502 responses
+Candidates: ['0960d596-362e-49ce-8327-e562166d8868', 'ff3f5027-c630-4ed1-b812-19e21d688922', '3909d4f6-9b13-468a-905f-434abfaefd79', '1dcb2e05-e154-4d5f-8c2e-1cd4706d5d9d', 'b5db2c85-9608-46c4-b32e-fdc77bd3eabf']
+--- RERANKER OUTPUT ---
+[('0960d596-362e-49ce-8327-e562166d8868', 0.005171841307748512), ('ff3f5027-c630-4ed1-b812-19e21d688922', 2.0137373756508474e-05)]
+--- RERANKER INPUT ---
+Event: Login errors are spiking in the auth service
+Candidates: []
+--- RERANKER OUTPUT ---
+[]
+--- RERANKER INPUT ---
+Event: Authentication failures are rising fast for sign in
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785']
+--- RERANKER OUTPUT ---
+[('29c0922f-06ed-4e8c-88f4-66d9ccb76785', 0.05796272434767455)]
+--- RERANKER INPUT ---
+Event: Checkout service is timing out for card payments
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785']
+--- RERANKER OUTPUT ---
+[('29c0922f-06ed-4e8c-88f4-66d9ccb76785', 1.3943291428390853e-05)]
+--- RERANKER INPUT ---
+Event: Card payment flow keeps timing out in checkout
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '29c0922f-06ed-4e8c-88f4-66d9ccb76785']
+--- RERANKER OUTPUT ---
+[('3e76ed18-8149-40b5-84f9-bf26a85c16dc', 0.4546753066940398), ('29c0922f-06ed-4e8c-88f4-66d9ccb76785', 1.163785679778121e-05)]
+--- RERANKER INPUT ---
+Event: Weekly sales dashboard needs a brighter chart palette
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '04b6c081-06c9-414c-9a55-b4e26ddcc6dc', '29c0922f-06ed-4e8c-88f4-66d9ccb76785']
+--- RERANKER OUTPUT ---
+[('3e76ed18-8149-40b5-84f9-bf26a85c16dc', 1.1446181816493591e-05), ('29c0922f-06ed-4e8c-88f4-66d9ccb76785', 1.131556112157735e-05)]
+--- RERANKER INPUT ---
+Event: Users still cannot sign in because auth failures continue
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785', '04b6c081-06c9-414c-9a55-b4e26ddcc6dc', '3e76ed18-8149-40b5-84f9-bf26a85c16dc', '96d0ff4a-eae3-447c-8482-1637fd60175c']
+--- RERANKER OUTPUT ---
+[('29c0922f-06ed-4e8c-88f4-66d9ccb76785', 2.189325566221487e-05), ('96d0ff4a-eae3-447c-8482-1637fd60175c', 1.2414810709006505e-05)]
+--- RERANKER INPUT ---
+Event: Gateway returns 502 during checkout payment requests
+Candidates: ['04b6c081-06c9-414c-9a55-b4e26ddcc6dc', '3e76ed18-8149-40b5-84f9-bf26a85c16dc', '29c0922f-06ed-4e8c-88f4-66d9ccb76785', '96d0ff4a-eae3-447c-8482-1637fd60175c', '8f49a8a3-bdb3-427d-8963-5e5c0d74a50d']
+--- RERANKER OUTPUT ---
+[('3e76ed18-8149-40b5-84f9-bf26a85c16dc', 0.020671776121795354), ('04b6c081-06c9-414c-9a55-b4e26ddcc6dc', 0.014077161095729292)]
+--- RERANKER INPUT ---
+Event: Payment requests fail with 502 errors in checkout gateway
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '29c0922f-06ed-4e8c-88f4-66d9ccb76785', '8f49a8a3-bdb3-427d-8963-5e5c0d74a50d', '96d0ff4a-eae3-447c-8482-1637fd60175c']
+--- RERANKER OUTPUT ---
+[('3e76ed18-8149-40b5-84f9-bf26a85c16dc', 0.001962266535985033), ('29c0922f-06ed-4e8c-88f4-66d9ccb76785', 0.00033191436488041537)]
+--- RERANKER INPUT ---
+Event: Password reset links are erroring out for several users
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785', '3e76ed18-8149-40b5-84f9-bf26a85c16dc', '8f49a8a3-bdb3-427d-8963-5e5c0d74a50d', '96d0ff4a-eae3-447c-8482-1637fd60175c']
+--- RERANKER OUTPUT ---
+[('29c0922f-06ed-4e8c-88f4-66d9ccb76785', 0.015464307856299816), ('8f49a8a3-bdb3-427d-8963-5e5c0d74a50d', 0.0001661749977551454)]
+--- RERANKER INPUT ---
+Event: Users report reset links failing during password recovery
+Candidates: ['29c0922f-06ed-4e8c-88f4-66d9ccb76785', '8f49a8a3-bdb3-427d-8963-5e5c0d74a50d', '3e76ed18-8149-40b5-84f9-bf26a85c16dc', '96d0ff4a-eae3-447c-8482-1637fd60175c']
+--- RERANKER OUTPUT ---
+[('8f49a8a3-bdb3-427d-8963-5e5c0d74a50d', 0.005152554416932168), ('29c0922f-06ed-4e8c-88f4-66d9ccb76785', 0.000775225898511629)]
+--- RERANKER INPUT ---
+Event: Checkout payment issue still reproduces with gateway 502 responses
+Candidates: ['3e76ed18-8149-40b5-84f9-bf26a85c16dc', '8f49a8a3-bdb3-427d-8963-5e5c0d74a50d', '96d0ff4a-eae3-447c-8482-1637fd60175c', '29c0922f-06ed-4e8c-88f4-66d9ccb76785']
+--- RERANKER OUTPUT ---
+[('3e76ed18-8149-40b5-84f9-bf26a85c16dc', 0.0007438687234013553), ('8f49a8a3-bdb3-427d-8963-5e5c0d74a50d', 2.0137373756508474e-05)]
+--- RERANKER INPUT ---
+Event: Login errors are spiking in the auth service
+Candidates: []
+--- RERANKER OUTPUT ---
+[]
+--- RERANKER INPUT ---
+Event: Authentication failures are rising fast for sign in
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151']
+--- RERANKER OUTPUT ---
+[('0ede13c5-f524-44b7-aeb5-f191a3113151', 0.05796272434767455)]
+--- RERANKER INPUT ---
+Event: Checkout service is timing out for card payments
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151']
+--- RERANKER OUTPUT ---
+[('0ede13c5-f524-44b7-aeb5-f191a3113151', 1.3943291428390853e-05)]
+--- RERANKER INPUT ---
+Event: Card payment flow keeps timing out in checkout
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '0ede13c5-f524-44b7-aeb5-f191a3113151']
+--- RERANKER OUTPUT ---
+[('d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', 0.9964893742399832), ('0ede13c5-f524-44b7-aeb5-f191a3113151', 1.163785679778121e-05)]
+--- RERANKER INPUT ---
+Event: Weekly sales dashboard needs a brighter chart palette
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '0ede13c5-f524-44b7-aeb5-f191a3113151']
+--- RERANKER OUTPUT ---
+[('0ede13c5-f524-44b7-aeb5-f191a3113151', 1.131556112157735e-05), ('d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', 1.1231412545770423e-05)]
+--- RERANKER INPUT ---
+Event: Users still cannot sign in because auth failures continue
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151', 'd7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '50de725e-a962-4f7b-bfab-ac48c5f2db2a']
+--- RERANKER OUTPUT ---
+[('0ede13c5-f524-44b7-aeb5-f191a3113151', 2.189325566221487e-05), ('50de725e-a962-4f7b-bfab-ac48c5f2db2a', 1.2414810709006505e-05)]
+--- RERANKER INPUT ---
+Event: Gateway returns 502 during checkout payment requests
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '0ede13c5-f524-44b7-aeb5-f191a3113151', '50de725e-a962-4f7b-bfab-ac48c5f2db2a', '97f74464-c418-4a33-add7-92bc17dd1836']
+--- RERANKER OUTPUT ---
+[('d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', 0.008162121809426957), ('0ede13c5-f524-44b7-aeb5-f191a3113151', 1.4767641836562332e-05)]
+--- RERANKER INPUT ---
+Event: Payment requests fail with 502 errors in checkout gateway
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '0ede13c5-f524-44b7-aeb5-f191a3113151', '97f74464-c418-4a33-add7-92bc17dd1836', '50de725e-a962-4f7b-bfab-ac48c5f2db2a']
+--- RERANKER OUTPUT ---
+[('d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', 0.003027835024568379), ('0ede13c5-f524-44b7-aeb5-f191a3113151', 0.00033191436488041537)]
+--- RERANKER INPUT ---
+Event: Password reset links are erroring out for several users
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151', 'd7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '97f74464-c418-4a33-add7-92bc17dd1836', '50de725e-a962-4f7b-bfab-ac48c5f2db2a']
+--- RERANKER OUTPUT ---
+[('0ede13c5-f524-44b7-aeb5-f191a3113151', 0.015464307856299816), ('97f74464-c418-4a33-add7-92bc17dd1836', 0.0001661749977551454)]
+--- RERANKER INPUT ---
+Event: Users report reset links failing during password recovery
+Candidates: ['0ede13c5-f524-44b7-aeb5-f191a3113151', '97f74464-c418-4a33-add7-92bc17dd1836', 'd7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '50de725e-a962-4f7b-bfab-ac48c5f2db2a']
+--- RERANKER OUTPUT ---
+[('97f74464-c418-4a33-add7-92bc17dd1836', 0.005152554416932168), ('0ede13c5-f524-44b7-aeb5-f191a3113151', 0.000775225898511629)]
+--- RERANKER INPUT ---
+Event: Checkout payment issue still reproduces with gateway 502 responses
+Candidates: ['d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', '97f74464-c418-4a33-add7-92bc17dd1836', '0ede13c5-f524-44b7-aeb5-f191a3113151', '50de725e-a962-4f7b-bfab-ac48c5f2db2a']
+--- RERANKER OUTPUT ---
+[('d7338aa9-99a3-4789-8ea5-bfaa2e058a2b', 0.005171841307748512), ('97f74464-c418-4a33-add7-92bc17dd1836', 2.0137373756508474e-05)]
+--- RERANKER INPUT ---
+Event: Login errors are spiking in the auth service
+Candidates: []
+--- RERANKER OUTPUT ---
+[]
+--- RERANKER INPUT ---
+Event: Authentication failures are rising fast for sign in
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651']
+--- RERANKER OUTPUT ---
+[('cad100a7-8e44-4c2f-815a-39b8ca61e651', 0.05796272434767455)]
+--- RERANKER INPUT ---
+Event: Checkout service is timing out for card payments
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651']
+--- RERANKER OUTPUT ---
+[('cad100a7-8e44-4c2f-815a-39b8ca61e651', 1.3943291428390853e-05)]
+--- RERANKER INPUT ---
+Event: Card payment flow keeps timing out in checkout
+Candidates: ['f97978c8-d011-49fb-a399-fa816517ba11', 'cad100a7-8e44-4c2f-815a-39b8ca61e651']
+--- RERANKER OUTPUT ---
+[('f97978c8-d011-49fb-a399-fa816517ba11', 0.4546753066940398), ('cad100a7-8e44-4c2f-815a-39b8ca61e651', 1.163785679778121e-05)]
+--- RERANKER INPUT ---
+Event: Weekly sales dashboard needs a brighter chart palette
+Candidates: ['f97978c8-d011-49fb-a399-fa816517ba11', 'cad100a7-8e44-4c2f-815a-39b8ca61e651']
+--- RERANKER OUTPUT ---
+[('f97978c8-d011-49fb-a399-fa816517ba11', 1.1446181816493591e-05), ('cad100a7-8e44-4c2f-815a-39b8ca61e651', 1.131556112157735e-05)]
+--- RERANKER INPUT ---
+Event: Users still cannot sign in because auth failures continue
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651', 'f97978c8-d011-49fb-a399-fa816517ba11', '9bf8991a-e3cd-4fec-9bf8-915f701a4914']
+--- RERANKER OUTPUT ---
+[('cad100a7-8e44-4c2f-815a-39b8ca61e651', 2.189325566221487e-05), ('9bf8991a-e3cd-4fec-9bf8-915f701a4914', 1.2414810709006505e-05)]
+--- RERANKER INPUT ---
+Event: Gateway returns 502 during checkout payment requests
+Candidates: ['f97978c8-d011-49fb-a399-fa816517ba11', 'cad100a7-8e44-4c2f-815a-39b8ca61e651', '9bf8991a-e3cd-4fec-9bf8-915f701a4914', 'fffb5cc8-a2bd-4b32-87ca-a9e56e4de92a']
+--- RERANKER OUTPUT ---
+[('f97978c8-d011-49fb-a399-fa816517ba11', 0.020671776121795354), ('cad100a7-8e44-4c2f-815a-39b8ca61e651', 1.4767641836562332e-05)]
+--- RERANKER INPUT ---
+Event: Payment requests fail with 502 errors in checkout gateway
+Candidates: ['02d10886-e27c-4c6d-b9a8-7275b10c20cc', 'f97978c8-d011-49fb-a399-fa816517ba11', 'cad100a7-8e44-4c2f-815a-39b8ca61e651', 'fffb5cc8-a2bd-4b32-87ca-a9e56e4de92a', '9bf8991a-e3cd-4fec-9bf8-915f701a4914']
+--- RERANKER OUTPUT ---
+[('02d10886-e27c-4c6d-b9a8-7275b10c20cc', 0.9995390655566683), ('f97978c8-d011-49fb-a399-fa816517ba11', 0.001962266535985033)]
+--- RERANKER INPUT ---
+Event: Password reset links are erroring out for several users
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651', 'f97978c8-d011-49fb-a399-fa816517ba11', 'fffb5cc8-a2bd-4b32-87ca-a9e56e4de92a', '9bf8991a-e3cd-4fec-9bf8-915f701a4914', '02d10886-e27c-4c6d-b9a8-7275b10c20cc']
+--- RERANKER OUTPUT ---
+[('cad100a7-8e44-4c2f-815a-39b8ca61e651', 0.015464307856299816), ('fffb5cc8-a2bd-4b32-87ca-a9e56e4de92a', 0.002581287170298771)]
+--- RERANKER INPUT ---
+Event: Users report reset links failing during password recovery
+Candidates: ['cad100a7-8e44-4c2f-815a-39b8ca61e651', '02d10886-e27c-4c6d-b9a8-7275b10c20cc', 'f97978c8-d011-49fb-a399-fa816517ba11', '9bf8991a-e3cd-4fec-9bf8-915f701a4914']
+--- RERANKER OUTPUT ---
+[('cad100a7-8e44-4c2f-815a-39b8ca61e651', 0.000775225898511629), ('02d10886-e27c-4c6d-b9a8-7275b10c20cc', 0.00012534635876626624)]
+--- RERANKER INPUT ---
+Event: Checkout payment issue still reproduces with gateway 502 responses
+Candidates: ['02d10886-e27c-4c6d-b9a8-7275b10c20cc', 'f97978c8-d011-49fb-a399-fa816517ba11', 'cad100a7-8e44-4c2f-815a-39b8ca61e651', '1e6e6676-614e-4dce-8dd0-5abac4f48b7d', '9bf8991a-e3cd-4fec-9bf8-915f701a4914']
+--- RERANKER OUTPUT ---
+[('02d10886-e27c-4c6d-b9a8-7275b10c20cc', 0.990985877592627), ('f97978c8-d011-49fb-a399-fa816517ba11', 0.0007438687234013553)]
+--- RERANKER INPUT ---
+Event: Authentication failures are rising in us-east-1 for contoso accounts
+Candidates: []
+--- RERANKER OUTPUT ---
+[]
+--- RERANKER INPUT ---
+Event: contoso cannot sign in because search-api returns 401
+Candidates: ['76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
+--- RERANKER OUTPUT ---
+[('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 0.005390590162040103)]
+--- RERANKER INPUT ---
+Event: Support reports repeated auth failures in us-east-1 for contoso
+Candidates: ['76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 0.9860992552228149), ('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 0.0017170771896007529)]
+--- RERANKER INPUT ---
+Event: search-api login flow is broken for contoso with 401
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
+--- RERANKER OUTPUT ---
+[('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 0.938860812726714), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 0.003712681333544358)]
+--- RERANKER INPUT ---
+Event: search-api is throwing 401 during login for contoso
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
+--- RERANKER OUTPUT ---
+[('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 0.9960479146330188), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 0.003644277635841503)]
+--- RERANKER INPUT ---
+Event: Login error volume spiked again for contoso on search-api
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
+--- RERANKER OUTPUT ---
+[('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 0.29592293643218837), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 0.013071049277156141)]
+--- RERANKER INPUT ---
+Event: contoso users in us-east-1 see login failures on search-api
+Candidates: ['76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 0.9856347284592262), ('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 0.8980652657092434)]
+--- RERANKER INPUT ---
+Event: Sign-in attempts keep failing for contoso on search-api in us-east-1
+Candidates: ['76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 0.9639102189073885), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 0.9621994962298659)]
+--- RERANKER INPUT ---
+Event: fabrikam shoppers cannot complete checkout on adyen
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
+--- RERANKER OUTPUT ---
+[('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 2.2238249887541028e-05), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 1.1147294397878178e-05)]
+--- RERANKER INPUT ---
+Event: fabrikam checkout still fails when payment goes through adyen
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
+--- RERANKER OUTPUT ---
+[('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 0.9985876489152379), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 3.301999853249235e-05)]
+--- RERANKER INPUT ---
+Event: Card payment requests hit 429 at the adyen edge
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 0.046224613288126784), ('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 1.1411881275369933e-05)]
+--- RERANKER INPUT ---
+Event: adyen payments time out during checkout for fabrikam
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
+--- RERANKER OUTPUT ---
+[('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 0.9890196047569738), ('a2507e63-eb57-4bba-a09a-972e3776dfcc', 0.9342306077665271)]
+--- RERANKER INPUT ---
+Event: adyen payment authorization is stalling in sa-east-1
+Candidates: ['76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 0.13222187232863725), ('a2507e63-eb57-4bba-a09a-972e3776dfcc', 0.037360416836682064)]
+--- RERANKER INPUT ---
+Event: 429 responses are coming back from adyen in checkout
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('a2507e63-eb57-4bba-a09a-972e3776dfcc', 0.984411831358352), ('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 0.4814841909806789)]
+--- RERANKER INPUT ---
+Event: Checkout retries are climbing for fabrikam because adyen is timing out
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 0.9180266541278752), ('a2507e63-eb57-4bba-a09a-972e3776dfcc', 0.0029073002937404576)]
+--- RERANKER INPUT ---
+Event: Checkout with adyen keeps failing in sa-east-1 for fabrikam
+Candidates: ['8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 0.9864758311260863), ('a2507e63-eb57-4bba-a09a-972e3776dfcc', 0.05337108677539912)]
+--- RERANKER INPUT ---
+Event: globex users cannot finish password recovery
+Candidates: ['67eecb46-1389-4a54-96b6-37b2b8ea45f9', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd']
+--- RERANKER OUTPUT ---
+[('67eecb46-1389-4a54-96b6-37b2b8ea45f9', 0.00010418630320227597), ('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 2.0631448242609103e-05)]
+--- RERANKER INPUT ---
+Event: Password recovery is failing again for globex
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('02d3af18-f70c-4810-968e-3c28b6cffa7b', 0.9976683507169153), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 0.00014565312392535493)]
+--- RERANKER INPUT ---
+Event: Recovery flow returns 500 for globex password resets
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('02d3af18-f70c-4810-968e-3c28b6cffa7b', 0.7249296604237891), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 1.592663822077017e-05)]
+--- RERANKER INPUT ---
+Event: Reset token validation is broken for globex in ap-south-1
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('02d3af18-f70c-4810-968e-3c28b6cffa7b', 0.004106099936294686), ('76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', 6.476058146530619e-05)]
+--- RERANKER INPUT ---
+Event: globex reset emails open to an error page in ap-south-1
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '02d3af18-f70c-4810-968e-3c28b6cffa7b', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
+--- RERANKER OUTPUT ---
+[('36fad492-d416-4e7f-9084-edf16407133e', 0.9813052075423879), ('02d3af18-f70c-4810-968e-3c28b6cffa7b', 0.02066914093319383)]
+--- RERANKER INPUT ---
+Event: 500 is blocking reset-link opens for globex
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '36fad492-d416-4e7f-9084-edf16407133e', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('36fad492-d416-4e7f-9084-edf16407133e', 0.12065820235291996), ('02d3af18-f70c-4810-968e-3c28b6cffa7b', 0.0051755373987535415)]
+--- RERANKER INPUT ---
+Event: globex support queue is filling with reset-link failures
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '36fad492-d416-4e7f-9084-edf16407133e', '76da1c7e-d4b2-40a5-96bd-fa247d3f53cd', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('36fad492-d416-4e7f-9084-edf16407133e', 0.3150811917557687), ('02d3af18-f70c-4810-968e-3c28b6cffa7b', 0.02093396669712123)]
+--- RERANKER INPUT ---
+Event: Password reset links are failing for globex users
+Candidates: ['02d3af18-f70c-4810-968e-3c28b6cffa7b', '36fad492-d416-4e7f-9084-edf16407133e', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('36fad492-d416-4e7f-9084-edf16407133e', 0.989332774785986), ('02d3af18-f70c-4810-968e-3c28b6cffa7b', 0.9883079161988506)]
+--- RERANKER INPUT ---
+Event: Dashboard paint time jumped and inventory-dashboard loads incomplete
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 1.1506211870367e-05), ('a2507e63-eb57-4bba-a09a-972e3776dfcc', 1.0999536662123151e-05)]
+--- RERANKER INPUT ---
+Event: initech sees broken inventory-dashboard widgets in eu-west-1
+Candidates: ['a2507e63-eb57-4bba-a09a-972e3776dfcc', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', '36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
+--- RERANKER OUTPUT ---
+[('36fad492-d416-4e7f-9084-edf16407133e', 1.355391868367043e-05), ('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 1.081365047372024e-05)]
+--- RERANKER INPUT ---
+Event: inventory-dashboard charts render blank for initech
+Candidates: ['0dd39892-6c3a-4e76-a226-faacbc27b104', '36fad492-d416-4e7f-9084-edf16407133e', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
+--- RERANKER OUTPUT ---
+[('0dd39892-6c3a-4e76-a226-faacbc27b104', 0.8293721569521356), ('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 1.136975458316167e-05)]
+--- RERANKER INPUT ---
+Event: initech still sees the inventory-dashboard UI glitch in eu-west-1
+Candidates: ['0dd39892-6c3a-4e76-a226-faacbc27b104', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '67eecb46-1389-4a54-96b6-37b2b8ea45f9', '36fad492-d416-4e7f-9084-edf16407133e']
+--- RERANKER OUTPUT ---
+[('0dd39892-6c3a-4e76-a226-faacbc27b104', 0.9973581712603506), ('ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 0.8705620244224048)]
+--- RERANKER INPUT ---
+Event: initech reports the inventory-dashboard page is visually broken
+Candidates: ['0dd39892-6c3a-4e76-a226-faacbc27b104', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '67eecb46-1389-4a54-96b6-37b2b8ea45f9']
+--- RERANKER OUTPUT ---
+[('0dd39892-6c3a-4e76-a226-faacbc27b104', 0.8923762303720754), ('ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 0.8847036931646782)]
+--- RERANKER INPUT ---
+Event: inventory-dashboard keeps loading without data traces for initech
+Candidates: ['ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '0dd39892-6c3a-4e76-a226-faacbc27b104', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
+--- RERANKER OUTPUT ---
+[('ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 0.8955178138711973), ('0dd39892-6c3a-4e76-a226-faacbc27b104', 0.8334429977366875)]
+--- RERANKER INPUT ---
+Event: Front-end logs show 502 while rendering inventory-dashboard
+Candidates: ['0dd39892-6c3a-4e76-a226-faacbc27b104', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
+--- RERANKER OUTPUT ---
+[('ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 0.03458500656192036), ('0dd39892-6c3a-4e76-a226-faacbc27b104', 0.0065456369518797864)]
+--- RERANKER INPUT ---
+Event: inventory-dashboard visuals are missing labels for initech
+Candidates: ['ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '0dd39892-6c3a-4e76-a226-faacbc27b104', '36fad492-d416-4e7f-9084-edf16407133e', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
+--- RERANKER OUTPUT ---
+[('ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 0.970654266205524), ('0dd39892-6c3a-4e76-a226-faacbc27b104', 0.924488341905209)]
+--- RERANKER INPUT ---
+Event: reports-api search path is breaching latency SLOs for umbrella
+Candidates: ['36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '0dd39892-6c3a-4e76-a226-faacbc27b104']
+--- RERANKER OUTPUT ---
+[('36fad492-d416-4e7f-9084-edf16407133e', 1.2930127473302503e-05), ('0dd39892-6c3a-4e76-a226-faacbc27b104', 1.2662734735289448e-05)]
+--- RERANKER INPUT ---
+Event: reports-api search queries are returning after 2.8s
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '0dd39892-6c3a-4e76-a226-faacbc27b104', '36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
+--- RERANKER OUTPUT ---
+[('9ac977dc-e36a-49fa-8c5f-dc8855f72381', 0.5464378155942619), ('0dd39892-6c3a-4e76-a226-faacbc27b104', 1.0626567314519045e-05)]
+--- RERANKER INPUT ---
+Event: Catalog search remains sluggish in us-east-1 for umbrella
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', '0dd39892-6c3a-4e76-a226-faacbc27b104', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '36fad492-d416-4e7f-9084-edf16407133e', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('9ac977dc-e36a-49fa-8c5f-dc8855f72381', 0.005461853876035849), ('a2de3a00-c320-420a-83d7-2b3832eaaf61', 1.3146162969699494e-05)]
+--- RERANKER INPUT ---
+Event: Search timeouts are rising for umbrella shoppers
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', '36fad492-d416-4e7f-9084-edf16407133e', '0dd39892-6c3a-4e76-a226-faacbc27b104', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('9ac977dc-e36a-49fa-8c5f-dc8855f72381', 0.03729251368288768), ('8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77', 3.819332857502798e-05)]
+--- RERANKER INPUT ---
+Event: umbrella product search takes too long on reports-api
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '523ee698-64b8-49ae-b61d-029353188ecf', '0dd39892-6c3a-4e76-a226-faacbc27b104', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '36fad492-d416-4e7f-9084-edf16407133e', '8c7e38c8-618a-40f3-bb6e-a24bd2cd8c77']
+--- RERANKER OUTPUT ---
+[('9ac977dc-e36a-49fa-8c5f-dc8855f72381', 0.9520905211621287), ('a2de3a00-c320-420a-83d7-2b3832eaaf61', 0.8345421380685839)]
+--- RERANKER INPUT ---
+Event: Catalog search latency is spiking for umbrella in us-east-1
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', '523ee698-64b8-49ae-b61d-029353188ecf', '0dd39892-6c3a-4e76-a226-faacbc27b104', '36fad492-d416-4e7f-9084-edf16407133e', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('9ac977dc-e36a-49fa-8c5f-dc8855f72381', 0.8382628405598069), ('523ee698-64b8-49ae-b61d-029353188ecf', 0.4797998965178173)]
+--- RERANKER INPUT ---
+Event: umbrella search results are delayed by 2.8s
+Candidates: ['a2de3a00-c320-420a-83d7-2b3832eaaf61', '523ee698-64b8-49ae-b61d-029353188ecf', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', '0dd39892-6c3a-4e76-a226-faacbc27b104', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '36fad492-d416-4e7f-9084-edf16407133e', 'a2507e63-eb57-4bba-a09a-972e3776dfcc']
+--- RERANKER OUTPUT ---
+[('523ee698-64b8-49ae-b61d-029353188ecf', 0.24648556306319766), ('9ac977dc-e36a-49fa-8c5f-dc8855f72381', 0.17246734670658662)]
+--- RERANKER INPUT ---
+Event: us-east-1 users report very slow catalog search
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', '0dd39892-6c3a-4e76-a226-faacbc27b104', '523ee698-64b8-49ae-b61d-029353188ecf', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '36fad492-d416-4e7f-9084-edf16407133e']
+--- RERANKER OUTPUT ---
+[('a2de3a00-c320-420a-83d7-2b3832eaaf61', 0.00012332188122799633), ('0dd39892-6c3a-4e76-a226-faacbc27b104', 3.2502600811713214e-05)]
+--- RERANKER INPUT ---
+Event: Delayed callbacks from salesforce are blocking order updates
+Candidates: ['523ee698-64b8-49ae-b61d-029353188ecf', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '36fad492-d416-4e7f-9084-edf16407133e', '0dd39892-6c3a-4e76-a226-faacbc27b104', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', '9ac977dc-e36a-49fa-8c5f-dc8855f72381']
+--- RERANKER OUTPUT ---
+[('a2de3a00-c320-420a-83d7-2b3832eaaf61', 1.4725691012222285e-05), ('9ac977dc-e36a-49fa-8c5f-dc8855f72381', 1.3113994855074143e-05)]
+--- RERANKER INPUT ---
+Event: salesforce webhook backlog is growing for northwind
+Candidates: ['7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '36fad492-d416-4e7f-9084-edf16407133e', '0dd39892-6c3a-4e76-a226-faacbc27b104', '523ee698-64b8-49ae-b61d-029353188ecf', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 0.0002774661284281184), ('6a2755c4-244b-4155-b4c4-53d92f52bdd6', 1.2156219489662704e-05)]
+--- RERANKER INPUT ---
+Event: retry-queue is filling with pending salesforce webhook deliveries
+Candidates: ['42a193de-c4c2-4bff-aaee-07d73c7e7e63', '36fad492-d416-4e7f-9084-edf16407133e', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '0dd39892-6c3a-4e76-a226-faacbc27b104', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '523ee698-64b8-49ae-b61d-029353188ecf']
+--- RERANKER OUTPUT ---
+[('42a193de-c4c2-4bff-aaee-07d73c7e7e63', 0.04137911029180547), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 0.0019309775476071245)]
+--- RERANKER INPUT ---
+Event: northwind order-state sync is lagging behind because of salesforce
+Candidates: ['42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '36fad492-d416-4e7f-9084-edf16407133e', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', '0dd39892-6c3a-4e76-a226-faacbc27b104', 'a2507e63-eb57-4bba-a09a-972e3776dfcc', '523ee698-64b8-49ae-b61d-029353188ecf', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('42a193de-c4c2-4bff-aaee-07d73c7e7e63', 0.5598310508045123), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 0.017801471168254358)]
+--- RERANKER INPUT ---
+Event: salesforce order webhooks are delayed for northwind
+Candidates: ['42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '523ee698-64b8-49ae-b61d-029353188ecf', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '36fad492-d416-4e7f-9084-edf16407133e', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', '0dd39892-6c3a-4e76-a226-faacbc27b104', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('42a193de-c4c2-4bff-aaee-07d73c7e7e63', 0.9908337256902169), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 0.9582618168240251)]
+--- RERANKER INPUT ---
+Event: northwind still has stale order status from salesforce
+Candidates: ['7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '0dd39892-6c3a-4e76-a226-faacbc27b104', '523ee698-64b8-49ae-b61d-029353188ecf', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('42a193de-c4c2-4bff-aaee-07d73c7e7e63', 0.8358492275231493), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 0.02061652542120305)]
+--- RERANKER INPUT ---
+Event: northwind fulfillment updates arrive late from salesforce
+Candidates: ['42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '523ee698-64b8-49ae-b61d-029353188ecf', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 0.6550333604681718), ('42a193de-c4c2-4bff-aaee-07d73c7e7e63', 0.3314816844253756)]
+--- RERANKER INPUT ---
+Event: Order status callbacks from salesforce are stuck in retry-queue
+Candidates: ['7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '523ee698-64b8-49ae-b61d-029353188ecf', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 0.8963181945841147), ('42a193de-c4c2-4bff-aaee-07d73c7e7e63', 0.011563407559177532)]
+--- RERANKER INPUT ---
+Event: PDF export of invoices is broken in ap-south-1 for contoso
+Candidates: ['9ac977dc-e36a-49fa-8c5f-dc8855f72381', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '523ee698-64b8-49ae-b61d-029353188ecf', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
+--- RERANKER OUTPUT ---
+[('6a2755c4-244b-4155-b4c4-53d92f52bdd6', 1.1434900437527553e-05), ('a2de3a00-c320-420a-83d7-2b3832eaaf61', 1.1190368236499254e-05)]
+--- RERANKER INPUT ---
+Event: contoso cannot download invoices in en-GB
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', '523ee698-64b8-49ae-b61d-029353188ecf', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
+--- RERANKER OUTPUT ---
+[('ded78f6f-37f6-45a7-9489-01fa50dda040', 0.5734277996647145), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 1.197293974788093e-05)]
+--- RERANKER INPUT ---
+Event: Invoice export PDF generation is failing for contoso
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '523ee698-64b8-49ae-b61d-029353188ecf', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('ded78f6f-37f6-45a7-9489-01fa50dda040', 0.9971364095370817), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 1.16209104930639e-05)]
+--- RERANKER INPUT ---
+Event: contoso support tickets mention broken invoice PDFs
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '523ee698-64b8-49ae-b61d-029353188ecf']
+--- RERANKER OUTPUT ---
+[('ded78f6f-37f6-45a7-9489-01fa50dda040', 0.9813882257457756), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 1.2427272154037702e-05)]
+--- RERANKER INPUT ---
+Event: contoso invoice downloads are empty again
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '523ee698-64b8-49ae-b61d-029353188ecf', 'a2de3a00-c320-420a-83d7-2b3832eaaf61', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', 'ea6e3dc4-accd-4c08-a3aa-cb5188a2cfd9', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', '9ac977dc-e36a-49fa-8c5f-dc8855f72381']
+--- RERANKER OUTPUT ---
+[('ded78f6f-37f6-45a7-9489-01fa50dda040', 0.2580666139873332), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 1.2921547965058483e-05)]
+--- RERANKER INPUT ---
+Event: Invoice export returns 401 for contoso finance users
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', 'be02a54c-fd1b-48c6-adee-9b27a05872f4', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', '523ee698-64b8-49ae-b61d-029353188ecf', '9ac977dc-e36a-49fa-8c5f-dc8855f72381', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '42a193de-c4c2-4bff-aaee-07d73c7e7e63']
+--- RERANKER OUTPUT ---
+[('ded78f6f-37f6-45a7-9489-01fa50dda040', 0.9223111179937804), ('be02a54c-fd1b-48c6-adee-9b27a05872f4', 0.8520771497660921)]
+--- RERANKER INPUT ---
+Event: en-GB invoice export is malformed for contoso
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', 'be02a54c-fd1b-48c6-adee-9b27a05872f4', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '523ee698-64b8-49ae-b61d-029353188ecf', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
+--- RERANKER OUTPUT ---
+[('be02a54c-fd1b-48c6-adee-9b27a05872f4', 0.9584183803526279), ('ded78f6f-37f6-45a7-9489-01fa50dda040', 0.9379810636335462)]
+--- RERANKER INPUT ---
+Event: Invoice rendering pipeline is timing out for contoso
+Candidates: ['be02a54c-fd1b-48c6-adee-9b27a05872f4', 'ded78f6f-37f6-45a7-9489-01fa50dda040', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('be02a54c-fd1b-48c6-adee-9b27a05872f4', 0.7582213640211785), ('ded78f6f-37f6-45a7-9489-01fa50dda040', 0.5517986638098973)]
+--- RERANKER INPUT ---
+Event: App version 4.12.0 is unstable in eu-west-1
+Candidates: ['ded78f6f-37f6-45a7-9489-01fa50dda040', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', 'be02a54c-fd1b-48c6-adee-9b27a05872f4', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
+--- RERANKER OUTPUT ---
+[('6a2755c4-244b-4155-b4c4-53d92f52bdd6', 1.5392886177500875e-05), ('be02a54c-fd1b-48c6-adee-9b27a05872f4', 1.1741252876715088e-05)]
+--- RERANKER INPUT ---
+Event: fabrikam still sees startup crashes in version 4.12.0
+Candidates: ['ca3680ec-da11-4670-9fc7-b5589be84eb2', 'ded78f6f-37f6-45a7-9489-01fa50dda040', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 'be02a54c-fd1b-48c6-adee-9b27a05872f4', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '6a2755c4-244b-4155-b4c4-53d92f52bdd6']
+--- RERANKER OUTPUT ---
+[('ca3680ec-da11-4670-9fc7-b5589be84eb2', 0.08904099068933811), ('be02a54c-fd1b-48c6-adee-9b27a05872f4', 1.2863723655858002e-05)]
+--- RERANKER INPUT ---
+Event: 429 appears in mobile crash traces for fabrikam
+Candidates: ['e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 'ded78f6f-37f6-45a7-9489-01fa50dda040', 'be02a54c-fd1b-48c6-adee-9b27a05872f4', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', 'ca3680ec-da11-4670-9fc7-b5589be84eb2']
+--- RERANKER OUTPUT ---
+[('e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 0.8125321993879645), ('6a2755c4-244b-4155-b4c4-53d92f52bdd6', 1.1706481174657904e-05)]
+--- RERANKER INPUT ---
+Event: Crash logs show 429 in app version 4.12.0
+Candidates: ['ca3680ec-da11-4670-9fc7-b5589be84eb2', 'e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 'ded78f6f-37f6-45a7-9489-01fa50dda040', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', 'be02a54c-fd1b-48c6-adee-9b27a05872f4']
+--- RERANKER OUTPUT ---
+[('e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 0.7964479721848664), ('ca3680ec-da11-4670-9fc7-b5589be84eb2', 0.31781605813921837)]
+--- RERANKER INPUT ---
+Event: fabrikam users on Android cannot open the app without crashing
+Candidates: ['e31d91a5-da8c-419e-9bcb-8cc5c65034ba', '6a2755c4-244b-4155-b4c4-53d92f52bdd6', 'ca3680ec-da11-4670-9fc7-b5589be84eb2', 'ded78f6f-37f6-45a7-9489-01fa50dda040', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 'be02a54c-fd1b-48c6-adee-9b27a05872f4', '42a193de-c4c2-4bff-aaee-07d73c7e7e63']
+--- RERANKER OUTPUT ---
+[('e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 0.9540349522702762), ('ca3680ec-da11-4670-9fc7-b5589be84eb2', 3.4519734772885906e-05)]
+--- RERANKER INPUT ---
+Event: Android app version 4.12.0 crashes for fabrikam users
+Candidates: ['e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 'ca3680ec-da11-4670-9fc7-b5589be84eb2', 'ded78f6f-37f6-45a7-9489-01fa50dda040', '42a193de-c4c2-4bff-aaee-07d73c7e7e63', 'be02a54c-fd1b-48c6-adee-9b27a05872f4', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
+--- RERANKER OUTPUT ---
+[('e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 0.999594837946786), ('ca3680ec-da11-4670-9fc7-b5589be84eb2', 0.6487912933752971)]
+--- RERANKER INPUT ---
+Event: Mobile session drops immediately after launch for fabrikam
+Candidates: ['e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 'be02a54c-fd1b-48c6-adee-9b27a05872f4', 'ded78f6f-37f6-45a7-9489-01fa50dda040', 'ca3680ec-da11-4670-9fc7-b5589be84eb2', '7050c347-cd36-4c54-a7a0-0b3ef7dc8052']
+--- RERANKER OUTPUT ---
+[('e31d91a5-da8c-419e-9bcb-8cc5c65034ba', 0.7365458282450792), ('7050c347-cd36-4c54-a7a0-0b3ef7dc8052', 1.169495440018262e-05)]

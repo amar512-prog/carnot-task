@@ -16,6 +16,8 @@ def connect_db():
 def ensure_schema() -> None:
     init_sql = Path("sql/init.sql").read_text(encoding="utf-8")
     with connect_db() as conn:
+        from demo.repositories.runtime_state_repository import RuntimeStateRepository
+        RuntimeStateRepository(conn).acquire_replay_maintenance_lock()
         with conn.cursor() as cur:
             cur.execute(init_sql)
         conn.commit()

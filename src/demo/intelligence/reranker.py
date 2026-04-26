@@ -75,8 +75,7 @@ class MiniLMReranker:
         ranked: list[RerankedCandidate] = []
         for candidate, raw_score in zip(candidates, raw_scores):
             score = float(raw_score)
-            if score < 0.0 or score > 1.0:
-                score = 1.0 / (1.0 + math.exp(-score))
+            score = 1.0 / (1.0 + math.exp(-score))
             ranked.append(
                 RerankedCandidate(
                     candidate=candidate,

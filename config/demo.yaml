@@ -13,8 +13,8 @@ reranker_top_k: 2
 judge_model_id: qwen3:4b-thinking
 judge_api_url: http://ollama:11434
 judge_timeout_seconds: 180
-draft_merge_window_minutes: 15
-maintenance_interval_minutes: 5
+draft_merge_window_minutes: 120
+maintenance_interval_minutes: 60
 embedding_dimension: 1024
 embedding_backend: sentence-transformers
 vector_mode: auto

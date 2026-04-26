@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from pathlib import Path
 
 from demo.config import DemoConfig
 from demo.domain.text_utils import load_story_events
@@ -26,7 +27,6 @@ class ResetService:
             return count
 
     def reset_to_baseline(self, *, rehydrate_runtime: bool = True, approach: int = 2) -> dict[str, object]:
-        ensure_schema()
         story_events = load_story_events(self.config.baseline_story_path)
         return self.reset_with_story(
             story_events,
@@ -43,13 +43,16 @@ class ResetService:
         persist_baseline: bool = True,
         approach: int = 2,
     ) -> dict[str, object]:
-        ensure_schema()
         restored_clusters: set[str] = set()
         restored_at = datetime.now(timezone.utc).isoformat()
+        
+        ensure_schema()
+        
         with connect_db() as conn:
             repo = EventRepository(conn)
             runtime_state = RuntimeStateRepository(conn)
             runtime_state.acquire_replay_maintenance_lock()
+            
             deleted = repo.clear_runtime_state()
             runtime_state.set_bool_flag("semantic_ready_for_active_window", False)
             restored = repo.replace_baseline_story(story_events) if persist_baseline else 0

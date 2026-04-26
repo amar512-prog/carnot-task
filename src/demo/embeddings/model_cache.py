@@ -29,7 +29,7 @@ class EmbeddingModel(Protocol):
     cache_dir: Path
     semantic_available: bool
 
-    def embed(self, text: str) -> EmbeddingSet:
+    def embed(self, text: str, is_query: bool = False) -> EmbeddingSet:
         ...
 
     def bucket_key(self, embedding: list[float], bits: int = 8) -> int:
@@ -66,7 +66,7 @@ class BaseEmbeddingModel:
 class StableProjectionEmbeddingModel(BaseEmbeddingModel):
     semantic_available: bool = field(default=False, init=False)
 
-    def embed(self, text: str) -> EmbeddingSet:
+    def embed(self, text: str, is_query: bool = False) -> EmbeddingSet:
         projection = self._project(text)
         return EmbeddingSet(
             semantic_embedding=None,
@@ -100,10 +100,15 @@ class SentenceTransformerEmbeddingModel(BaseEmbeddingModel):
     projection_backend: StableProjectionEmbeddingModel
     semantic_available: bool = field(default=True, init=False)
 
-    def embed(self, text: str) -> EmbeddingSet:
-        projection = self.projection_backend.embed(text).projection_embedding
+    def embed(self, text: str, is_query: bool = False) -> EmbeddingSet:
+        projection = self.projection_backend.embed(text, is_query=is_query).projection_embedding
         try:
-            encoded = self.backend.encode(text, normalize_embeddings=True)
+            kwargs = {"normalize_embeddings": True}
+            if hasattr(self.backend, "prompts") and self.backend.prompts:
+                prompt_name = "query" if is_query else "document"
+                if prompt_name in self.backend.prompts:
+                    kwargs["prompt_name"] = prompt_name
+            encoded = self.backend.encode(text, **kwargs)
             vector = encoded.tolist() if hasattr(encoded, "tolist") else list(encoded)
             if len(vector) == self.dimension:
                 semantic = [float(value) for value in vector]
